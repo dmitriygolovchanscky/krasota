@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scaleble=0"
+  />
+  <link
+    rel="apple-touch-icon"
+    sizes="76x76"
+    href="favicon/apple-touch-icon.png"
+  />
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="32x32"
+    href="favicon/favicon-32x32.png"
+  />
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="16x16"
+    href="favicon/favicon-16x16.png"
+  />
+  <link rel="manifest" href="favicon/site.webmanifest" />
+  <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#d69e9f" />
+  <meta name="msapplication-TileColor" content="#d69e9f" />
+  <meta name="theme-color" content="#ffffff" />
+  <link rel="stylesheet" href="css/icons.css?_v=20230719132957" />
+  <link rel="stylesheet" href="css/style.min.css?_v=20230719132957" />
+  <script src="js/app.min.js?_v=20230719132957" defer></script>
+  <title>Оформление заказа</title>
+</head>
+
+
+  <body>
+	<div class="loader active lock-padding">
+  <div class="loader__body">
+    <div class="spinner"">
+      <span>k</span>
+      <span>r</span>
+      <span>a</span>
+      <span>s</span>
+      <span>o</span>
+      <span>t</span>
+      <span>a</span>
+    </div>
+  </div>
+</div>
+
+    <div class="wrapper">
+      <header class="header lock-padding ">
+	<div class="container">
+		 <div class="header__body">
+			<a href="index.html" class="header__logo">krasota</a>
+			<div class="header__burger">
+				<svg viewBox="0 0 32 32">
+					<path class="line line-top-bottom" d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22"></path>
+					<path class="line" d="M7 16 27 16"></path>
+				 </svg>
+			</div>
+			<nav class="header__menu">
+			  <ul class="header__list">
+				 <li>
+					<a href="catalog.html" class="header__link">Каталог</a>
+				 </li>
+				 <li>
+					<a href="delivery.html" class="header__link">Доставка</a>
+				 </li>
+				 <li>
+					<a href="contacts.html" class="header__link">Контaкты</a>
+				 </li>
+			  </ul>
+			</nav>
+		 </div>
+	  </div>
+</header>
+
+      <main class="content">
+        <section class="order">
+          <div class="container container-order">
+            <h1 class="order__title">Оформление заказа</h1>
+            <div class="order__content">
+              <form class="order__form" name="order">
+                <div class="order__item">
+                  <div class="order__name">Ваше имя</div>
+                  <input
+                    class="order__input input-name"
+                    type="text"
+                    name="yourName"
+                    id="your-name"
+                    autocomplete="off"
+                    spellcheck="false"
+						  maxlength="16"
+                  />
+						<div class="order__error error-name">Вы не ввели имя</div>
+                </div>
+                <div class="order__item ">
+                  <div class="order__name">Ваш телефон</div>
+                  <input
+                    class="order__input input-phone"
+                    type="tel"
+                    name="yourPhone"
+                    id="your-phone"
+                    autocomplete="off"
+                    spellcheck="false"
+                  />
+						<div class="order__error error-phone">Некорректный номер</div>
+                </div>
+                <div class="order__item order__checkbox">
+                  <div class="order__name">Способ получения</div>
+
+                  <input
+                    class="order__input"
+                    type="radio"
+                    name="method"
+                    id="method-pickup"
+                    checked
+                  />
+                  <label class="order__label" for="method-pickup"
+                    >Самовывоз</label
+                  >
+
+                  <input
+                    class="order__input"
+                    type="radio"
+                    name="method"
+                    id="method-delivery"
+                  />
+                  <label class="order__label" for="method-delivery"
+                    >Доставка курьером</label
+                  >
+                </div>
+                <div class="order__item order__checkbox hide">
+                  <div class="order__name">Получатель</div>
+
+                  <input
+                    class="order__input"
+                    type="radio"
+                    name="transfer"
+                    id="transfer-me"
+                    checked
+                  />
+                  <label class="order__label" for="transfer-me">Я</label>
+
+                  <input
+                    class="order__input"
+                    type="radio"
+                    name="transfer"
+                    id="transfer-other"
+                  /><label class="order__label" for="transfer-other"
+                    >Другой человек</label
+                  >
+                </div>
+                <div class="order__item hide">
+                  <div class="order__name">Имя получателя</div>
+                  <input
+                    class="order__input input-name"
+                    type="text"
+                    name="otherName"
+                    id="other-name"
+                    autocomplete="off"
+                    spellcheck="false"
+						  maxlength="16"
+                  />
+						<div class="order__error error-name-other">Вы не ввели имя</div>
+                </div>
+                <div class="order__item hide">
+                  <div class="order__name">Телефон получателя</div>
+                  <input
+                    class="order__input input-phone"
+                    type="tel"
+                    name="otherPhone"
+                    id="other-phone"
+                    autocomplete="off"
+                    spellcheck="false"
+                  />
+						<div class="order__error error-phone-other">Некорректный номер</div>
+                </div>
+                <div class="order__item hide">
+                  <div class="order__name address-title">Ваш адрес</div>
+                  <input
+                    class="order__input"
+                    type="text"
+                    name="address"
+                    id="address"
+                    autocomplete="off"
+                    spellcheck="false"
+						  maxlength="200"
+                  />
+						<div class="order__error error-address">Вы не ввели адрес</div>
+                </div>
+                <div class="order__item order__checkbox hide">
+                  <div class="order__name">Дата и время</div>
+
+                  <input
+                    class="order__input"
+                    type="radio"
+                    name="time"
+                    id="time-quickly"
+                    checked
+                  />
+                  <label class="order__label" for="time-quickly"
+                    >Как можно скорее</label
+                  >
+
+                  <input
+                    class="order__input"
+                    type="radio"
+                    name="time"
+                    id="time-custom"
+                  /><label class="order__label" for="time-custom"
+                    >Выбрать время</label
+                  >
+                </div>
+                <div class="order__item hide">
+                  <div class="order__name">Введите дату</div>
+                  <input
+                    class="order__input input-date"
+                    type="tel"
+                    name="date"
+                    id="date"
+                    autocomplete="off"
+                    spellcheck="false"
+                  />
+						<div class="order__error error-date">Некорректный ввод даты</div>
+                </div>
+                <div class="order__item hide">
+                  <div class="order__name">Введите время</div>
+                  <input
+                    class="order__input input-time"
+                    type="tel"
+                    name="timeInput"
+                    id="timeInput"
+                    autocomplete="off"
+                    spellcheck="false"
+						  maxlength="5"
+                  />
+						<div class="order__error error-time">Некорректный ввод времени</div>
+                </div>
+                <div class="order__item order__checkbox hide">
+                  <div class="order__name">
+                    Звонить адресату перед отправкой?
+                  </div>
+
+                  <input
+                    class="order__input"
+                    type="radio"
+                    name="phonecall"
+                    id="phonecall-yes"
+                    checked
+                  />
+                  <label class="order__label" for="phonecall-yes">Да</label>
+
+                  <input
+                    class="order__input"
+                    type="radio"
+                    name="phonecall"
+                    id="phonecall-no"
+                  />
+                  <label class="order__label" for="phonecall-no">Нет</label>
+                </div>
+                <div class="order__item">
+                  <div class="order__name">Комментарий к заказу</div>
+                  <textarea name="message" id="message" maxlength="500"></textarea>
+                </div>
+                <div class="order__bottom">
+                  <div class="order__sum">
+                    Итоговая сумма <span>3200 ₽</span>
+                  </div>
+                  <button class="order__button">Оформить заказ</button>
+                </div>
+              </form>
+              <div class="order__cart cart-order">
+                <div class="cart-order__title">Состав заказа</div>
+                <div class="cart-order__items">
+                  <div class="cart-order__item">
+                    <div class="cart-order__left">
+                      <div class="cart-order__image">
+                        <picture><source srcset="img/mono-1.webp" type="image/webp"><img src="img/mono-1.jpg" alt="Моно-букет" /></picture>
+                      </div>
+                      <div class="cart-order__info">
+                        <div class="cart-order__name">
+                          Моно-букет <span>#1</span>
+                        </div>
+                        <div class="cart-order__price">3000 <span>₽</span></div>
+                      </div>
+                    </div>
+                    <div class="cart-order__right">
+                      <div class="cart-order__counter">
+                        <i
+                          class="cart-order__minus cart-order__button disabled fa-solid fa-minus"
+                          data-article="mono-1"
+                        ></i>
+                        <div
+                          class="cart-order__count cart-count"
+                          data-article="mono-1"
+                        >
+                          1
+                        </div>
+                        <i
+                          class="cart-order__plus cart-order__button fa-solid fa-plus"
+                          data-article="mono-1"
+                        ></i>
+                      </div>
+                      <i
+                        class="cart-order__delete fa-solid fa-trash"
+                        data-article="mono-1"
+                      ></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="cart-order__delivery delivery-cart">
+                  <div class="delivery-cart__title">Доставка</div>
+                  <div class="delivery-cart__price">200 <span>₽</span></div>
+                </div>
+                <div class="cart-order__sum">
+                  Итоговая сумма <span>3200 ₽</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class=" order-message order__empty">
+          <div class="message-order__text">Корзина пустая</div>
+          <a href="catalog.html" class="message-order__link">В каталог</a>
+        </div>
+		  <div class=" order-message order__success">
+			<div class="message-order__text ">Заказ успешно оформлен!</div>
+			<a href="index.html" class="message-order__link">На главную</a>
+		  </div>
+      </main>
+      <footer class="footer">
+  <div class="container">
+    <div class="footer__body">
+      <div class="footer__column">
+        <div class="footer__logo">krasota</div>
+        <div class="footer__address">Самара, проспект Карла Маркса, 163</div>
+      </div>
+      <div class="footer__icons">
+        <a class="footer__icon"
+          ><img src="img/tg-icon.svg" alt="Телеграм"
+        /></a>
+        <a class="footer__icon"
+          ><img src="img/ig-icon.svg" alt="Инстаграм"
+        /></a>
+        <a class="footer__icon"
+          ><img src="img/pin-icon.svg" alt="Пинтерест"
+        /></a>
+      </div>
+      <div class="footer__links">
+			<a class="footer__link">Политика конфиденциальности</a>
+			<a href="delivery.html" class="footer__link">Доставка и оплата</a>
+			<a href="contacts.html" class="footer__link">Контакты</a>
+		</div>
+    </div>
+  </div>
+</footer>
+
+    </div>
+  </body>
+</html>

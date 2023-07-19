@@ -1,0 +1,2959 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scaleble=0"
+  />
+  <link
+    rel="apple-touch-icon"
+    sizes="76x76"
+    href="favicon/apple-touch-icon.png"
+  />
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="32x32"
+    href="favicon/favicon-32x32.png"
+  />
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="16x16"
+    href="favicon/favicon-16x16.png"
+  />
+  <link rel="manifest" href="favicon/site.webmanifest" />
+  <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#d69e9f" />
+  <meta name="msapplication-TileColor" content="#d69e9f" />
+  <meta name="theme-color" content="#ffffff" />
+  <link rel="stylesheet" href="css/icons.css?_v=20230719132957" />
+  <link rel="stylesheet" href="css/style.min.css?_v=20230719132957" />
+  <script src="js/app.min.js?_v=20230719132957" defer></script>
+  <title>Каталог</title>
+</head>
+
+
+  <body class="products">
+	<div class="loader active lock-padding">
+  <div class="loader__body">
+    <div class="spinner"">
+      <span>k</span>
+      <span>r</span>
+      <span>a</span>
+      <span>s</span>
+      <span>o</span>
+      <span>t</span>
+      <span>a</span>
+    </div>
+  </div>
+</div>
+
+    <div class="wrapper">
+      <header class="header lock-padding catalog">
+	<div class="container">
+		 <div class="header__body">
+			<a href="index.html" class="header__logo">krasota</a>
+			<div class="header__burger">
+				<svg viewBox="0 0 32 32">
+					<path class="line line-top-bottom" d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22"></path>
+					<path class="line" d="M7 16 27 16"></path>
+				 </svg>
+			</div>
+			<nav class="header__menu">
+			  <ul class="header__list">
+				 <li>
+					<a href="catalog.html" class="header__link">Каталог</a>
+				 </li>
+				 <li>
+					<a href="delivery.html" class="header__link">Доставка</a>
+				 </li>
+				 <li>
+					<a href="contacts.html" class="header__link">Контaкты</a>
+				 </li>
+			  </ul>
+			</nav>
+		 </div>
+	  </div>
+</header>
+
+      <main class="content">
+        <section class="products__buttons">
+          <div class="container">
+            <div class="products__row">
+              <div class="products__filt products__button">
+                <i class="fa-solid fa-filter"></i>Фильтр
+              </div>
+              <div class="products__sort products__button">
+                <i class="fa-solid fa-arrow-right-arrow-left"></i>По умолчанию
+              </div>
+              <div class="filter__settings">
+                <div class="filter__title">Цена</div>
+                <div class="filter__row">
+                  <div class="filter__price">от</div>
+                  <input
+                    class="filter__input filter-price-start"
+                    type="tel"
+                    name="filter-price"
+                    placeholder="0"
+                    autocomplete="off"
+                    spellcheck="false"
+                    data-filter="minPrice"
+                  />
+                  <div class="filter__price">до</div>
+                  <input
+                    class="filter__input filter-price-end"
+                    type="tel"
+                    name="filter-price"
+                    placeholder="50000"
+                    autocomplete="off"
+                    spellcheck="false"
+                    data-filter="maxPrice"
+                  />
+                </div>
+                <div class="filter__title">Тип</div>
+                <div class="filter__check">
+                  <input
+                    class="filter__checkbox"
+                    type="checkbox"
+                    name="type"
+                    id="filter-type-mono"
+                    data-filter="mono"
+                    data-category="Моно-букет"
+                  />
+                  <label class="filter__label" for="filter-type-mono"
+                    >Моно-букет</label
+                  >
+                </div>
+                <div class="filter__check">
+                  <input
+                    class="filter__checkbox"
+                    type="checkbox"
+                    name="type"
+                    id="filter-type-author"
+                    data-filter="author"
+                    data-category="Авторский букет"
+                  />
+                  <label class="filter__label" for="filter-type-author"
+                    >Авторский букет</label
+                  >
+                </div>
+                <div class="filter__check">
+                  <input
+                    class="filter__checkbox"
+                    type="checkbox"
+                    name="type"
+                    id="filter-type-comp"
+                    data-filter="comp"
+                    data-category="Композиция"
+                  />
+                  <label class="filter__label" for="filter-type-comp"
+                    >Композиция</label
+                  >
+                </div>
+                <div class="filter__button">Применить</div>
+              </div>
+              <div class="sort__settings">
+                <div class="sort__item" data-sort="default">По умолчанию</div>
+                <div class="sort__item" data-sort="low-price">
+                  По возрастанию цены
+                </div>
+                <div class="sort__item" data-sort="high-price">
+                  По убыванию цены
+                </div>
+              </div>
+            </div>
+            <div class="products__filters"></div>
+          </div>
+        </section>
+        <section class="products__content">
+          <div class="container">
+            <div class="products__items">
+              <div
+  class="products__item item-product"
+  data-price="3850"
+  data-type="mono"
+>
+  <div class="item-product__image">
+    <picture><source srcset="img/mono-1.webp" type="image/webp"><img src="img/mono-1.jpg" alt="Моно-букет" /></picture>
+  </div>
+  <div class="item-product__title">Моно-букет <span>#1</span></div>
+  <div class="item-product__price">3850 <span>₽</span></div>
+  <button
+    class="item-product__button button-add"
+    data-article="mono-1"
+    data-price="3850"
+    data-type="Моно-букет"
+    data-number="1"
+  >
+    <span>В корзину</span>
+    <span><i class="fa-solid fa-check"></i></span>
+  </button>
+</div>
+
+              <div
+  class="products__item item-product"
+  data-price="2350"
+  data-type="mono"
+>
+  <div class="item-product__image">
+    <picture><source srcset="img/mono-2.webp" type="image/webp"><img src="img/mono-2.jpg" alt="Моно-букет" /></picture>
+  </div>
+  <div class="item-product__title">Моно-букет <span>#2</span></div>
+  <div class="item-product__price">2350 <span>₽</span></div>
+  <button
+    class="item-product__button button-add"
+    data-article="mono-2"
+    data-price="2350"
+    data-type="Моно-букет"
+    data-number="2"
+  >
+    <span>В корзину</span>
+    <span><i class="fa-solid fa-check"></i></span>
+  </button>
+</div>
+
+              <div
+  class="products__item item-product"
+  data-price="11750"
+  data-type="mono"
+>
+  <div class="item-product__image">
+    <picture><source srcset="img/mono-3.webp" type="image/webp"><img src="img/mono-3.jpg" alt="Моно-букет" /></picture>
+  </div>
+  <div class="item-product__title">Моно-букет <span>#3</span></div>
+  <div class="item-product__price">11750 <span>₽</span></div>
+  <button
+    class="item-product__button button-add"
+    data-article="mono-3"
+    data-price="11750"
+    data-type="Моно-букет"
+    data-number="3"
+  >
+    <span>В корзину</span>
+    <span><i class="fa-solid fa-check"></i></span>
+  </button>
+</div>
+
+              <div
+  class="products__item item-product"
+  data-price="2150"
+  data-type="mono"
+>
+  <div class="item-product__image">
+    <picture><source srcset="img/mono-4.webp" type="image/webp"><img src="img/mono-4.jpg" alt="Моно-букет" /></picture>
+  </div>
+  <div class="item-product__title">Моно-букет <span>#4</span></div>
+  <div class="item-product__price">2150 <span>₽</span></div>
+  <button
+    class="item-product__button button-add"
+    data-article="mono-4"
+    data-price="2150"
+    data-type="Моно-букет"
+    data-number="4"
+  >
+    <span>В корзину</span>
+    <span><i class="fa-solid fa-check"></i></span>
+  </button>
+</div>
+
+              <div
+  class="products__item item-product"
+  data-price="3550"
+  data-type="mono"
+>
+  <div class="item-product__image">
+    <picture><source srcset="img/mono-5.webp" type="image/webp"><img src="img/mono-5.jpg" alt="Моно-букет" /></picture>
+  </div>
+  <div class="item-product__title">Моно-букет <span>#5</span></div>
+  <div class="item-product__price">3550 <span>₽</span></div>
+  <button
+    class="item-product__button button-add"
+    data-article="mono-5"
+    data-price="3550"
+    data-type="Моно-букет"
+    data-number="5"
+  >
+    <span>В корзину</span>
+    <span><i class="fa-solid fa-check"></i></span>
+  </button>
+</div>
+
+              <div
+  class="products__item item-product"
+  data-price="2350"
+  data-type="mono"
+>
+  <div class="item-product__image">
+    <picture><source srcset="img/mono-6.webp" type="image/webp"><img src="img/mono-6.jpg" alt="Моно-букет" /></picture>
+  </div>
+  <div class="item-product__title">Моно-букет <span>#6</span></div>
+  <div class="item-product__price">2350 <span>₽</span></div>
+  <button
+    class="item-product__button button-add"
+    data-article="mono-6"
+    data-price="2350"
+    data-type="Моно-букет"
+    data-number="6"
+  >
+    <span>В корзину</span>
+    <span><i class="fa-solid fa-check"></i></span>
+  </button>
+</div>
+
+              <div
+  class="products__item item-product"
+  data-price="3950"
+  data-type="mono"
+>
+  <div class="item-product__image">
+    <picture><source srcset="img/mono-7.webp" type="image/webp"><img src="img/mono-7.jpg" alt="Моно-букет" /></picture>
+  </div>
+  <div class="item-product__title">Моно-букет <span>#7</span></div>
+  <div class="item-product__price">3950 <span>₽</span></div>
+  <button
+    class="item-product__button button-add"
+    data-article="mono-7"
+    data-price="3950"
+    data-type="Моно-букет"
+    data-number="7"
+  >
+    <span>В корзину</span>
+    <span><i class="fa-solid fa-check"></i></span>
+  </button>
+</div>
+
+              <div
+  class="products__item item-product"
+  data-price="2350"
+  data-type="mono"
+>
+  <div class="item-product__image">
+    <picture><source srcset="img/mono-8.webp" type="image/webp"><img src="img/mono-8.jpg" alt="Моно-букет" /></picture>
+  </div>
+  <div class="item-product__title">Моно-букет <span>#8</span></div>
+  <div class="item-product__price">2350 <span>₽</span></div>
+  <button
+    class="item-product__button button-add"
+    data-article="mono-8"
+    data-price="2350"
+    data-type="Моно-букет"
+    data-number="8"
+  >
+    <span>В корзину</span>
+    <span><i class="fa-solid fa-check"></i></span>
+  </button>
+</div>
+
+              <div
+  class="products__item item-product"
+  data-price="2950"
+  data-type="mono"
+>
+  <div class="item-product__image">
+    <picture><source srcset="img/mono-9.webp" type="image/webp"><img src="img/mono-9.jpg" alt="Моно-букет" /></picture>
+  </div>
+  <div class="item-product__title">Моно-букет <span>#9</span></div>
+  <div class="item-product__price">2950 <span>₽</span></div>
+  <button
+    class="item-product__button button-add"
+    data-article="mono-9"
+    data-price="2950"
+    data-type="Моно-букет"
+    data-number="9"
+  >
+    <span>В корзину</span>
+    <span><i class="fa-solid fa-check"></i></span>
+  </button>
+</div>
+
+              <div
+  class="products__item item-product"
+  data-price="2150"
+  data-type="mono"
+>
+  <div class="item-product__image">
+    <picture><source srcset="img/mono-10.webp" type="image/webp"><img src="img/mono-10.jpg" alt="Моно-букет" /></picture>
+  </div>
+  <div class="item-product__title">Моно-букет <span>#10</span></div>
+  <div class="item-product__price">2150 <span>₽</span></div>
+  <button
+    class="item-product__button button-add"
+    data-article="mono-10"
+    data-price="2150"
+    data-type="Моно-букет"
+    data-number="10"
+  >
+    <span>В корзину</span>
+    <span><i class="fa-solid fa-check"></i></span>
+  </button>
+</div>
+
+              <div
+  class="products__item item-product"
+  data-price="1450"
+  data-type="mono"
+>
+  <div class="item-product__image">
+    <picture><source srcset="img/mono-11.webp" type="image/webp"><img src="img/mono-11.jpg" alt="Моно-букет" /></picture>
+  </div>
+  <div class="item-product__title">Моно-букет <span>#11</span></div>
+  <div class="item-product__price">1450 <span>₽</span></div>
+  <button
+    class="item-product__button button-add"
+    data-article="mono-11"
+    data-price="1450"
+    data-type="Моно-букет"
+    data-number="11"
+  >
+    <span>В корзину</span>
+    <span><i class="fa-solid fa-check"></i></span>
+  </button>
+</div>
+
+              <div
+  class="products__item item-product"
+  data-price="4550"
+  data-type="mono"
+>
+  <div class="item-product__image">
+    <picture><source srcset="img/mono-12.webp" type="image/webp"><img src="img/mono-12.jpg" alt="Моно-букет" /></picture>
+  </div>
+  <div class="item-product__title">Моно-букет <span>#12</span></div>
+  <div class="item-product__price">4550 <span>₽</span></div>
+  <button
+    class="item-product__button button-add"
+    data-article="mono-12"
+    data-price="4550"
+    data-type="Моно-букет"
+    data-number="12"
+  >
+    <span>В корзину</span>
+    <span><i class="fa-solid fa-check"></i></span>
+  </button>
+</div>
+
+              <div
+  class="products__item item-product"
+  data-price="11550"
+  data-type="mono"
+>
+  <div class="item-product__image">
+    <picture><source srcset="img/mono-13.webp" type="image/webp"><img src="img/mono-13.jpg" alt="Моно-букет" /></picture>
+  </div>
+  <div class="item-product__title">Моно-букет <span>#13</span></div>
+  <div class="item-product__price">11550 <span>₽</span></div>
+  <button
+    class="item-product__button button-add"
+    data-article="mono-13"
+    data-price="11550"
+    data-type="Моно-букет"
+    data-number="13"
+  >
+    <span>В корзину</span>
+    <span><i class="fa-solid fa-check"></i></span>
+  </button>
+</div>
+
+              <div
+  class="products__item item-product"
+  data-price="2550"
+  data-type="mono"
+>
+  <div class="item-product__image">
+    <picture><source srcset="img/mono-14.webp" type="image/webp"><img src="img/mono-14.jpg" alt="Моно-букет" /></picture>
+  </div>
+  <div class="item-product__title">Моно-букет <span>#14</span></div>
+  <div class="item-product__price">2550 <span>₽</span></div>
+  <button
+    class="item-product__button button-add"
+    data-article="mono-14"
+    data-price="2550"
+    data-type="Моно-букет"
+    data-number="14"
+  >
+    <span>В корзину</span>
+    <span><i class="fa-solid fa-check"></i></span>
+  </button>
+</div>
+
+              <div
+  class="products__item item-product"
+  data-price="1250"
+  data-type="mono"
+>
+  <div class="item-product__image">
+    <picture><source srcset="img/mono-15.webp" type="image/webp"><img src="img/mono-15.jpg" alt="Моно-букет" /></picture>
+  </div>
+  <div class="item-product__title">Моно-букет <span>#15</span></div>
+  <div class="item-product__price">1250 <span>₽</span></div>
+  <button
+    class="item-product__button button-add"
+    data-article="mono-15"
+    data-price="1250"
+    data-type="Моно-букет"
+    data-number="15"
+  >
+    <span>В корзину</span>
+    <span><i class="fa-solid fa-check"></i></span>
+  </button>
+</div>
+
+              <div
+  class="products__item item-product"
+  data-price="5350"
+  data-type="mono"
+>
+  <div class="item-product__image">
+    <picture><source srcset="img/mono-16.webp" type="image/webp"><img src="img/mono-16.jpg" alt="Моно-букет" /></picture>
+  </div>
+  <div class="item-product__title">Моно-букет <span>#16</span></div>
+  <div class="item-product__price">5350 <span>₽</span></div>
+  <button
+    class="item-product__button button-add"
+    data-article="mono-16"
+    data-price="5350"
+    data-type="Моно-букет"
+    data-number="16"
+  >
+    <span>В корзину</span>
+    <span><i class="fa-solid fa-check"></i></span>
+  </button>
+</div>
+
+              <div
+  class="products__item item-product"
+  data-price="3150"
+  data-type="mono"
+>
+  <div class="item-product__image">
+    <picture><source srcset="img/mono-17.webp" type="image/webp"><img src="img/mono-17.jpg" alt="Моно-букет" /></picture>
+  </div>
+  <div class="item-product__title">Моно-букет <span>#17</span></div>
+  <div class="item-product__price">3150 <span>₽</span></div>
+  <button
+    class="item-product__button button-add"
+    data-article="mono-17"
+    data-price="3150"
+    data-type="Моно-букет"
+    data-number="17"
+  >
+    <span>В корзину</span>
+    <span><i class="fa-solid fa-check"></i></span>
+  </button>
+</div>
+
+              <div
+  class="products__item item-product"
+  data-price="2850"
+  data-type="mono"
+>
+  <div class="item-product__image">
+    <picture><source srcset="img/mono-18.webp" type="image/webp"><img src="img/mono-18.jpg" alt="Моно-букет" /></picture>
+  </div>
+  <div class="item-product__title">Моно-букет <span>#18</span></div>
+  <div class="item-product__price">2850 <span>₽</span></div>
+  <button
+    class="item-product__button button-add"
+    data-article="mono-18"
+    data-price="2850"
+    data-type="Моно-букет"
+    data-number="18"
+  >
+    <span>В корзину</span>
+    <span><i class="fa-solid fa-check"></i></span>
+  </button>
+</div>
+
+              <div
+  class="products__item item-product"
+  data-price="2350"
+  data-type="mono"
+>
+  <div class="item-product__image">
+    <picture><source srcset="img/mono-19.webp" type="image/webp"><img src="img/mono-19.jpg" alt="Моно-букет" /></picture>
+  </div>
+  <div class="item-product__title">Моно-букет <span>#19</span></div>
+  <div class="item-product__price">2350 <span>₽</span></div>
+  <button
+    class="item-product__button button-add"
+    data-article="mono-19"
+    data-price="2350"
+    data-type="Моно-букет"
+    data-number="19"
+  >
+    <span>В корзину</span>
+    <span><i class="fa-solid fa-check"></i></span>
+  </button>
+</div>
+
+              <div
+  class="products__item item-product"
+  data-price="2150"
+  data-type="mono"
+>
+  <div class="item-product__image">
+    <picture><source srcset="img/mono-20.webp" type="image/webp"><img src="img/mono-20.jpg" alt="Моно-букет" /></picture>
+  </div>
+  <div class="item-product__title">Моно-букет <span>#20</span></div>
+  <div class="item-product__price">2150 <span>₽</span></div>
+  <button
+    class="item-product__button button-add"
+    data-article="mono-20"
+    data-price="2150"
+    data-type="Моно-букет"
+    data-number="20"
+  >
+    <span>В корзину</span>
+    <span><i class="fa-solid fa-check"></i></span>
+  </button>
+</div>
+
+              <div
+  class="products__item item-product"
+  data-price="3000"
+  data-type="mono"
+>
+  <div class="item-product__image">
+    <picture><source srcset="img/mono-21.webp" type="image/webp"><img src="img/mono-21.jpg" alt="Моно-букет" /></picture>
+  </div>
+  <div class="item-product__title">Моно-букет <span>#21</span></div>
+  <div class="item-product__price">3000 <span>₽</span></div>
+  <button
+    class="item-product__button button-add"
+    data-article="mono-21"
+    data-price="3000"
+    data-type="Моно-букет"
+    data-number="21"
+  >
+    <span>В корзину</span>
+    <span><i class="fa-solid fa-check"></i></span>
+  </button>
+</div>
+
+              <div
+  class="products__item item-product"
+  data-price="3750"
+  data-type="mono"
+>
+  <div class="item-product__image">
+    <picture><source srcset="img/mono-22.webp" type="image/webp"><img src="img/mono-22.jpg" alt="Моно-букет" /></picture>
+  </div>
+  <div class="item-product__title">Моно-букет <span>#22</span></div>
+  <div class="item-product__price">3750 <span>₽</span></div>
+  <button
+    class="item-product__button button-add"
+    data-article="mono-22"
+    data-price="3750"
+    data-type="Моно-букет"
+    data-number="22"
+  >
+    <span>В корзину</span>
+    <span><i class="fa-solid fa-check"></i></span>
+  </button>
+</div>
+
+              <div
+  class="products__item item-product"
+  data-price="2450"
+  data-type="mono"
+>
+  <div class="item-product__image">
+    <picture><source srcset="img/mono-23.webp" type="image/webp"><img src="img/mono-23.jpg" alt="Моно-букет" /></picture>
+  </div>
+  <div class="item-product__title">Моно-букет <span>#23</span></div>
+  <div class="item-product__price">2450 <span>₽</span></div>
+  <button
+    class="item-product__button button-add"
+    data-article="mono-23"
+    data-price="2450"
+    data-type="Моно-букет"
+    data-number="23"
+  >
+    <span>В корзину</span>
+    <span><i class="fa-solid fa-check"></i></span>
+  </button>
+</div>
+
+              <div
+  class="products__item item-product"
+  data-price="3450"
+  data-type="mono"
+>
+  <div class="item-product__image">
+    <picture><source srcset="img/mono-24.webp" type="image/webp"><img src="img/mono-24.jpg" alt="Моно-букет" /></picture>
+  </div>
+  <div class="item-product__title">Моно-букет <span>#24</span></div>
+  <div class="item-product__price">3450 <span>₽</span></div>
+  <button
+    class="item-product__button button-add"
+    data-article="mono-24"
+    data-price="3450"
+    data-type="Моно-букет"
+    data-number="24"
+  >
+    <span>В корзину</span>
+    <span><i class="fa-solid fa-check"></i></span>
+  </button>
+</div>
+
+              <div
+  class="products__item item-product"
+  data-price="3950"
+  data-type="mono"
+>
+  <div class="item-product__image">
+    <picture><source srcset="img/mono-25.webp" type="image/webp"><img src="img/mono-25.jpg" alt="Моно-букет" /></picture>
+  </div>
+  <div class="item-product__title">Моно-букет <span>#25</span></div>
+  <div class="item-product__price">3950 <span>₽</span></div>
+  <button
+    class="item-product__button button-add"
+    data-article="mono-25"
+    data-price="3950"
+    data-type="Моно-букет"
+    data-number="25"
+  >
+    <span>В корзину</span>
+    <span><i class="fa-solid fa-check"></i></span>
+  </button>
+</div>
+
+              <div
+  class="products__item item-product"
+  data-price="2350"
+  data-type="mono"
+>
+  <div class="item-product__image">
+    <picture><source srcset="img/mono-26.webp" type="image/webp"><img src="img/mono-26.jpg" alt="Моно-букет" /></picture>
+  </div>
+  <div class="item-product__title">Моно-букет <span>#26</span></div>
+  <div class="item-product__price">2350 <span>₽</span></div>
+  <button
+    class="item-product__button button-add"
+    data-article="mono-26"
+    data-price="2350"
+    data-type="Моно-букет"
+    data-number="26"
+  >
+    <span>В корзину</span>
+    <span><i class="fa-solid fa-check"></i></span>
+  </button>
+</div>
+
+              <div
+  class="products__item item-product"
+  data-price="4350"
+  data-type="mono"
+>
+  <div class="item-product__image">
+    <picture><source srcset="img/mono-27.webp" type="image/webp"><img src="img/mono-27.jpg" alt="Моно-букет" /></picture>
+  </div>
+  <div class="item-product__title">Моно-букет <span>#27</span></div>
+  <div class="item-product__price">4350 <span>₽</span></div>
+  <button
+    class="item-product__button button-add"
+    data-article="mono-27"
+    data-price="4350"
+    data-type="Моно-букет"
+    data-number="27"
+  >
+    <span>В корзину</span>
+    <span><i class="fa-solid fa-check"></i></span>
+  </button>
+</div>
+
+              <div
+  class="products__item item-product"
+  data-price="2550"
+  data-type="mono"
+>
+  <div class="item-product__image">
+    <picture><source srcset="img/mono-28.webp" type="image/webp"><img src="img/mono-28.jpg" alt="Моно-букет" /></picture>
+  </div>
+  <div class="item-product__title">Моно-букет <span>#28</span></div>
+  <div class="item-product__price">2550 <span>₽</span></div>
+  <button
+    class="item-product__button button-add"
+    data-article="mono-28"
+    data-price="2550"
+    data-type="Моно-букет"
+    data-number="28"
+  >
+    <span>В корзину</span>
+    <span><i class="fa-solid fa-check"></i></span>
+  </button>
+</div>
+
+              <div
+  class="products__item item-product"
+  data-price="2950"
+  data-type="mono"
+>
+  <div class="item-product__image">
+    <picture><source srcset="img/mono-29.webp" type="image/webp"><img src="img/mono-29.jpg" alt="Моно-букет" /></picture>
+  </div>
+  <div class="item-product__title">Моно-букет <span>#29</span></div>
+  <div class="item-product__price">2950 <span>₽</span></div>
+  <button
+    class="item-product__button button-add"
+    data-article="mono-29"
+    data-price="2950"
+    data-type="Моно-букет"
+    data-number="29"
+  >
+    <span>В корзину</span>
+    <span><i class="fa-solid fa-check"></i></span>
+  </button>
+</div>
+
+              <div
+  class="products__item item-product"
+  data-price="7500"
+  data-type="mono"
+>
+  <div class="item-product__image">
+    <picture><source srcset="img/mono-30.webp" type="image/webp"><img src="img/mono-30.jpg" alt="Моно-букет" /></picture>
+  </div>
+  <div class="item-product__title">Моно-букет <span>#30</span></div>
+  <div class="item-product__price">7500 <span>₽</span></div>
+  <button
+    class="item-product__button button-add"
+    data-article="mono-30"
+    data-price="7500"
+    data-type="Моно-букет"
+    data-number="30"
+  >
+    <span>В корзину</span>
+    <span><i class="fa-solid fa-check"></i></span>
+  </button>
+</div>
+
+              <div
+  class="products__item item-product"
+  data-price="1750"
+  data-type="mono"
+>
+  <div class="item-product__image">
+    <picture><source srcset="img/mono-31.webp" type="image/webp"><img src="img/mono-31.jpg" alt="Моно-букет" /></picture>
+  </div>
+  <div class="item-product__title">Моно-букет <span>#31</span></div>
+  <div class="item-product__price">1750 <span>₽</span></div>
+  <button
+    class="item-product__button button-add"
+    data-article="mono-31"
+    data-price="1750"
+    data-type="Моно-букет"
+    data-number="31"
+  >
+    <span>В корзину</span>
+    <span><i class="fa-solid fa-check"></i></span>
+  </button>
+</div>
+
+              <div
+  class="products__item item-product"
+  data-price="3150"
+  data-type="mono"
+>
+  <div class="item-product__image">
+    <picture><source srcset="img/mono-32.webp" type="image/webp"><img src="img/mono-32.jpg" alt="Моно-букет" /></picture>
+  </div>
+  <div class="item-product__title">Моно-букет <span>#32</span></div>
+  <div class="item-product__price">3150 <span>₽</span></div>
+  <button
+    class="item-product__button button-add"
+    data-article="mono-32"
+    data-price="3150"
+    data-type="Моно-букет"
+    data-number="32"
+  >
+    <span>В корзину</span>
+    <span><i class="fa-solid fa-check"></i></span>
+  </button>
+</div>
+
+              <div
+  class="products__item item-product"
+  data-price="12500"
+  data-type="mono"
+>
+  <div class="item-product__image">
+    <picture><source srcset="img/mono-33.webp" type="image/webp"><img src="img/mono-33.jpg" alt="Моно-букет" /></picture>
+  </div>
+  <div class="item-product__title">Моно-букет <span>#33</span></div>
+  <div class="item-product__price">12500 <span>₽</span></div>
+  <button
+    class="item-product__button button-add"
+    data-article="mono-33"
+    data-price="12500"
+    data-type="Моно-букет"
+    data-number="33"
+  >
+    <span>В корзину</span>
+    <span><i class="fa-solid fa-check"></i></span>
+  </button>
+</div>
+
+              <div
+  class="products__item item-product"
+  data-price="7150"
+  data-type="mono"
+>
+  <div class="item-product__image">
+    <picture><source srcset="img/mono-34.webp" type="image/webp"><img src="img/mono-34.jpg" alt="Моно-букет" /></picture>
+  </div>
+  <div class="item-product__title">Моно-букет <span>#34</span></div>
+  <div class="item-product__price">7150 <span>₽</span></div>
+  <button
+    class="item-product__button button-add"
+    data-article="mono-34"
+    data-price="7150"
+    data-type="Моно-букет"
+    data-number="34"
+  >
+    <span>В корзину</span>
+    <span><i class="fa-solid fa-check"></i></span>
+  </button>
+</div>
+
+              <div
+  class="products__item item-product"
+  data-price="2750"
+  data-type="mono"
+>
+  <div class="item-product__image">
+    <picture><source srcset="img/mono-35.webp" type="image/webp"><img src="img/mono-35.jpg" alt="Моно-букет" /></picture>
+  </div>
+  <div class="item-product__title">Моно-букет <span>#35</span></div>
+  <div class="item-product__price">2750 <span>₽</span></div>
+  <button
+    class="item-product__button button-add"
+    data-article="mono-35"
+    data-price="2750"
+    data-type="Моно-букет"
+    data-number="35"
+  >
+    <span>В корзину</span>
+    <span><i class="fa-solid fa-check"></i></span>
+  </button>
+</div>
+
+              <div
+  class="products__item item-product"
+  data-price="4350"
+  data-type="mono"
+>
+  <div class="item-product__image">
+    <picture><source srcset="img/mono-36.webp" type="image/webp"><img src="img/mono-36.jpg" alt="Моно-букет" /></picture>
+  </div>
+  <div class="item-product__title">Моно-букет <span>#36</span></div>
+  <div class="item-product__price">4350 <span>₽</span></div>
+  <button
+    class="item-product__button button-add"
+    data-article="mono-36"
+    data-price="4350"
+    data-type="Моно-букет"
+    data-number="36"
+  >
+    <span>В корзину</span>
+    <span><i class="fa-solid fa-check"></i></span>
+  </button>
+</div>
+
+              <div
+  class="products__item item-product"
+  data-price="6150"
+  data-type="mono"
+>
+  <div class="item-product__image">
+    <picture><source srcset="img/mono-37.webp" type="image/webp"><img src="img/mono-37.jpg" alt="Моно-букет" /></picture>
+  </div>
+  <div class="item-product__title">Моно-букет <span>#37</span></div>
+  <div class="item-product__price">6150 <span>₽</span></div>
+  <button
+    class="item-product__button button-add"
+    data-article="mono-37"
+    data-price="6150"
+    data-type="Моно-букет"
+    data-number="37"
+  >
+    <span>В корзину</span>
+    <span><i class="fa-solid fa-check"></i></span>
+  </button>
+</div>
+
+              <div
+  class="products__item item-product"
+  data-price="3150"
+  data-type="mono"
+>
+  <div class="item-product__image">
+    <picture><source srcset="img/mono-38.webp" type="image/webp"><img src="img/mono-38.jpg" alt="Моно-букет" /></picture>
+  </div>
+  <div class="item-product__title">Моно-букет <span>#38</span></div>
+  <div class="item-product__price">3150 <span>₽</span></div>
+  <button
+    class="item-product__button button-add"
+    data-article="mono-38"
+    data-price="3150"
+    data-type="Моно-букет"
+    data-number="38"
+  >
+    <span>В корзину</span>
+    <span><i class="fa-solid fa-check"></i></span>
+  </button>
+</div>
+
+              <div
+  class="products__item item-product"
+  data-price="3550"
+  data-type="mono"
+>
+  <div class="item-product__image">
+    <picture><source srcset="img/mono-39.webp" type="image/webp"><img src="img/mono-39.jpg" alt="Моно-букет" /></picture>
+  </div>
+  <div class="item-product__title">Моно-букет <span>#39</span></div>
+  <div class="item-product__price">3550 <span>₽</span></div>
+  <button
+    class="item-product__button button-add"
+    data-article="mono-39"
+    data-price="3550"
+    data-type="Моно-букет"
+    data-number="39"
+  >
+    <span>В корзину</span>
+    <span><i class="fa-solid fa-check"></i></span>
+  </button>
+</div>
+
+              <div
+  class="products__item item-product"
+  data-price="21550"
+  data-type="mono"
+>
+  <div class="item-product__image">
+    <picture><source srcset="img/mono-40.webp" type="image/webp"><img src="img/mono-40.jpg" alt="Моно-букет" /></picture>
+  </div>
+  <div class="item-product__title">Моно-букет <span>#40</span></div>
+  <div class="item-product__price">21550 <span>₽</span></div>
+  <button
+    class="item-product__button button-add"
+    data-article="mono-40"
+    data-price="21550"
+    data-type="Моно-букет"
+    data-number="40"
+  >
+    <span>В корзину</span>
+    <span><i class="fa-solid fa-check"></i></span>
+  </button>
+</div>
+
+              <div
+  class="products__item item-product"
+  data-price="2150"
+  data-type="mono"
+>
+  <div class="item-product__image">
+    <picture><source srcset="img/mono-41.webp" type="image/webp"><img src="img/mono-41.jpg" alt="Моно-букет" /></picture>
+  </div>
+  <div class="item-product__title">Моно-букет <span>#41</span></div>
+  <div class="item-product__price">2150 <span>₽</span></div>
+  <button
+    class="item-product__button button-add"
+    data-article="mono-41"
+    data-price="2150"
+    data-type="Моно-букет"
+    data-number="41"
+  >
+    <span>В корзину</span>
+    <span><i class="fa-solid fa-check"></i></span>
+  </button>
+</div>
+
+              <div
+  class="products__item item-product"
+  data-price="4950"
+  data-type="mono"
+>
+  <div class="item-product__image">
+    <picture><source srcset="img/mono-42.webp" type="image/webp"><img src="img/mono-42.jpg" alt="Моно-букет" /></picture>
+  </div>
+  <div class="item-product__title">Моно-букет <span>#42</span></div>
+  <div class="item-product__price">4950 <span>₽</span></div>
+  <button
+    class="item-product__button button-add"
+    data-article="mono-42"
+    data-price="4950"
+    data-type="Моно-букет"
+    data-number="42"
+  >
+    <span>В корзину</span>
+    <span><i class="fa-solid fa-check"></i></span>
+  </button>
+</div>
+
+              <div
+  class="products__item item-product"
+  data-price="4150"
+  data-type="mono"
+>
+  <div class="item-product__image">
+    <picture><source srcset="img/mono-43.webp" type="image/webp"><img src="img/mono-43.jpg" alt="Моно-букет" /></picture>
+  </div>
+  <div class="item-product__title">Моно-букет <span>#43</span></div>
+  <div class="item-product__price">4150 <span>₽</span></div>
+  <button
+    class="item-product__button button-add"
+    data-article="mono-43"
+    data-price="4150"
+    data-type="Моно-букет"
+    data-number="43"
+  >
+    <span>В корзину</span>
+    <span><i class="fa-solid fa-check"></i></span>
+  </button>
+</div>
+
+              <div
+  class="products__item item-product"
+  data-price="3750"
+  data-type="mono"
+>
+  <div class="item-product__image">
+    <picture><source srcset="img/mono-44.webp" type="image/webp"><img src="img/mono-44.jpg" alt="Моно-букет" /></picture>
+  </div>
+  <div class="item-product__title">Моно-букет <span>#44</span></div>
+  <div class="item-product__price">3750 <span>₽</span></div>
+  <button
+    class="item-product__button button-add"
+    data-article="mono-44"
+    data-price="3750"
+    data-type="Моно-букет"
+    data-number="44"
+  >
+    <span>В корзину</span>
+    <span><i class="fa-solid fa-check"></i></span>
+  </button>
+</div>
+
+              <div
+  class="products__item item-product"
+  data-price="1850"
+  data-type="mono"
+>
+  <div class="item-product__image">
+    <picture><source srcset="img/mono-45.webp" type="image/webp"><img src="img/mono-45.jpg" alt="Моно-букет" /></picture>
+  </div>
+  <div class="item-product__title">Моно-букет <span>#45</span></div>
+  <div class="item-product__price">1850 <span>₽</span></div>
+  <button
+    class="item-product__button button-add"
+    data-article="mono-45"
+    data-price="1850"
+    data-type="Моно-букет"
+    data-number="45"
+  >
+    <span>В корзину</span>
+    <span><i class="fa-solid fa-check"></i></span>
+  </button>
+</div>
+
+              <div
+  class="products__item item-product"
+  data-price="3000"
+  data-type="mono"
+>
+  <div class="item-product__image">
+    <picture><source srcset="img/mono-46.webp" type="image/webp"><img src="img/mono-46.jpg" alt="Моно-букет" /></picture>
+  </div>
+  <div class="item-product__title">Моно-букет <span>#46</span></div>
+  <div class="item-product__price">3000 <span>₽</span></div>
+  <button
+    class="item-product__button button-add"
+    data-article="mono-46"
+    data-price="3000"
+    data-type="Моно-букет"
+    data-number="46"
+  >
+    <span>В корзину</span>
+    <span><i class="fa-solid fa-check"></i></span>
+  </button>
+</div>
+
+              <div
+  class="products__item item-product"
+  data-price="3350"
+  data-type="mono"
+>
+  <div class="item-product__image">
+    <picture><source srcset="img/mono-47.webp" type="image/webp"><img src="img/mono-47.jpg" alt="Моно-букет" /></picture>
+  </div>
+  <div class="item-product__title">Моно-букет <span>#47</span></div>
+  <div class="item-product__price">3350 <span>₽</span></div>
+  <button
+    class="item-product__button button-add"
+    data-article="mono-47"
+    data-price="3350"
+    data-type="Моно-букет"
+    data-number="47"
+  >
+    <span>В корзину</span>
+    <span><i class="fa-solid fa-check"></i></span>
+  </button>
+</div>
+
+              <div
+  class="products__item item-product"
+  data-price="6550"
+  data-type="mono"
+>
+  <div class="item-product__image">
+    <picture><source srcset="img/mono-48.webp" type="image/webp"><img src="img/mono-48.jpg" alt="Моно-букет" /></picture>
+  </div>
+  <div class="item-product__title">Моно-букет <span>#48</span></div>
+  <div class="item-product__price">6550 <span>₽</span></div>
+  <button
+    class="item-product__button button-add"
+    data-article="mono-48"
+    data-price="6550"
+    data-type="Моно-букет"
+    data-number="48"
+  >
+    <span>В корзину</span>
+    <span><i class="fa-solid fa-check"></i></span>
+  </button>
+</div>
+
+              <div
+  class="products__item item-product"
+  data-price="4000"
+  data-type="mono"
+>
+  <div class="item-product__image">
+    <picture><source srcset="img/mono-49.webp" type="image/webp"><img src="img/mono-49.jpg" alt="Моно-букет" /></picture>
+  </div>
+  <div class="item-product__title">Моно-букет <span>#49</span></div>
+  <div class="item-product__price">4000 <span>₽</span></div>
+  <button
+    class="item-product__button button-add"
+    data-article="mono-49"
+    data-price="4000"
+    data-type="Моно-букет"
+    data-number="49"
+  >
+    <span>В корзину</span>
+    <span><i class="fa-solid fa-check"></i></span>
+  </button>
+</div>
+
+              <div
+  class="products__item item-product"
+  data-price="3350"
+  data-type="mono"
+>
+  <div class="item-product__image">
+    <picture><source srcset="img/mono-50.webp" type="image/webp"><img src="img/mono-50.jpg" alt="Моно-букет" /></picture>
+  </div>
+  <div class="item-product__title">Моно-букет <span>#50</span></div>
+  <div class="item-product__price">3350 <span>₽</span></div>
+  <button
+    class="item-product__button button-add"
+    data-article="mono-50"
+    data-price="3350"
+    data-type="Моно-букет"
+    data-number="50"
+  >
+    <span>В корзину</span>
+    <span><i class="fa-solid fa-check"></i></span>
+  </button>
+</div>
+
+              <div
+  class="products__item item-product"
+  data-price="3150"
+  data-type="mono"
+>
+  <div class="item-product__image">
+    <picture><source srcset="img/mono-51.webp" type="image/webp"><img src="img/mono-51.jpg" alt="Моно-букет" /></picture>
+  </div>
+  <div class="item-product__title">Моно-букет <span>#51</span></div>
+  <div class="item-product__price">3150 <span>₽</span></div>
+  <button
+    class="item-product__button button-add"
+    data-article="mono-51"
+    data-price="3150"
+    data-type="Моно-букет"
+    data-number="51"
+  >
+    <span>В корзину</span>
+    <span><i class="fa-solid fa-check"></i></span>
+  </button>
+</div>
+
+              <div
+  class="products__item item-product"
+  data-price="4550"
+  data-type="mono"
+>
+  <div class="item-product__image">
+    <picture><source srcset="img/mono-52.webp" type="image/webp"><img src="img/mono-52.jpg" alt="Моно-букет" /></picture>
+  </div>
+  <div class="item-product__title">Моно-букет <span>#52</span></div>
+  <div class="item-product__price">4550 <span>₽</span></div>
+  <button
+    class="item-product__button button-add"
+    data-article="mono-52"
+    data-price="4550"
+    data-type="Моно-букет"
+    data-number="52"
+  >
+    <span>В корзину</span>
+    <span><i class="fa-solid fa-check"></i></span>
+  </button>
+</div>
+
+              <div
+  class="products__item item-product"
+  data-price="3750"
+  data-type="mono"
+>
+  <div class="item-product__image">
+    <picture><source srcset="img/mono-53.webp" type="image/webp"><img src="img/mono-53.jpg" alt="Моно-букет" /></picture>
+  </div>
+  <div class="item-product__title">Моно-букет <span>#53</span></div>
+  <div class="item-product__price">3750 <span>₽</span></div>
+  <button
+    class="item-product__button button-add"
+    data-article="mono-53"
+    data-price="3750"
+    data-type="Моно-букет"
+    data-number="53"
+  >
+    <span>В корзину</span>
+    <span><i class="fa-solid fa-check"></i></span>
+  </button>
+</div>
+
+              <div
+  class="products__item item-product"
+  data-price="2150"
+  data-type="mono"
+>
+  <div class="item-product__image">
+    <picture><source srcset="img/mono-54.webp" type="image/webp"><img src="img/mono-54.jpg" alt="Моно-букет" /></picture>
+  </div>
+  <div class="item-product__title">Моно-букет <span>#54</span></div>
+  <div class="item-product__price">2150 <span>₽</span></div>
+  <button
+    class="item-product__button button-add"
+    data-article="mono-54"
+    data-price="2150"
+    data-type="Моно-букет"
+    data-number="54"
+  >
+    <span>В корзину</span>
+    <span><i class="fa-solid fa-check"></i></span>
+  </button>
+</div>
+
+              <div
+  class="products__item item-product"
+  data-price="4050"
+  data-type="mono"
+>
+  <div class="item-product__image">
+    <picture><source srcset="img/mono-55.webp" type="image/webp"><img src="img/mono-55.jpg" alt="Моно-букет" /></picture>
+  </div>
+  <div class="item-product__title">Моно-букет <span>#55</span></div>
+  <div class="item-product__price">4050 <span>₽</span></div>
+  <button
+    class="item-product__button button-add"
+    data-article="mono-55"
+    data-price="4050"
+    data-type="Моно-букет"
+    data-number="55"
+  >
+    <span>В корзину</span>
+    <span><i class="fa-solid fa-check"></i></span>
+  </button>
+</div>
+
+              <div
+  class="products__item item-product"
+  data-price="3950"
+  data-type="mono"
+>
+  <div class="item-product__image">
+    <picture><source srcset="img/mono-56.webp" type="image/webp"><img src="img/mono-56.jpg" alt="Моно-букет" /></picture>
+  </div>
+  <div class="item-product__title">Моно-букет <span>#56</span></div>
+  <div class="item-product__price">3950 <span>₽</span></div>
+  <button
+    class="item-product__button button-add"
+    data-article="mono-56"
+    data-price="3950"
+    data-type="Моно-букет"
+    data-number="56"
+  >
+    <span>В корзину</span>
+    <span><i class="fa-solid fa-check"></i></span>
+  </button>
+</div>
+
+              <div
+  class="products__item item-product"
+  data-price="2350"
+  data-type="mono"
+>
+  <div class="item-product__image">
+    <picture><source srcset="img/mono-57.webp" type="image/webp"><img src="img/mono-57.jpg" alt="Моно-букет" /></picture>
+  </div>
+  <div class="item-product__title">Моно-букет <span>#57</span></div>
+  <div class="item-product__price">2350 <span>₽</span></div>
+  <button
+    class="item-product__button button-add"
+    data-article="mono-57"
+    data-price="2350"
+    data-type="Моно-букет"
+    data-number="57"
+  >
+    <span>В корзину</span>
+    <span><i class="fa-solid fa-check"></i></span>
+  </button>
+</div>
+
+              <div
+  class="products__item item-product"
+  data-price="2150"
+  data-type="author"
+>
+  <div class="item-product__image">
+    <picture><source srcset="img/author-1.webp" type="image/webp"><img src="img/author-1.jpg" alt="Авторский букет" /></picture>
+  </div>
+  <div class="item-product__title">Авторский букет <span>#1</span></div>
+  <div class="item-product__price">2150 <span>₽</span></div>
+  <button
+    class="item-product__button button-add"
+    data-article="author-1"
+    data-price="2150"
+    data-type="Авторский букет"
+    data-number="1"
+  >
+    <span>В корзину</span>
+    <span><i class="fa-solid fa-check"></i></span>
+  </button>
+</div>
+
+              <div
+  class="products__item item-product"
+  data-price="2650"
+  data-type="author"
+>
+  <div class="item-product__image">
+    <picture><source srcset="img/author-2.webp" type="image/webp"><img src="img/author-2.jpg" alt="Авторский букет" /></picture>
+  </div>
+  <div class="item-product__title">Авторский букет <span>#2</span></div>
+  <div class="item-product__price">2650 <span>₽</span></div>
+  <button
+    class="item-product__button button-add"
+    data-article="author-2"
+    data-price="2650"
+    data-type="Авторский букет"
+    data-number="2"
+  >
+    <span>В корзину</span>
+    <span><i class="fa-solid fa-check"></i></span>
+  </button>
+</div>
+
+              <div
+  class="products__item item-product"
+  data-price="5950"
+  data-type="author"
+>
+  <div class="item-product__image">
+    <picture><source srcset="img/author-3.webp" type="image/webp"><img src="img/author-3.jpg" alt="Авторский букет" /></picture>
+  </div>
+  <div class="item-product__title">Авторский букет <span>#3</span></div>
+  <div class="item-product__price">5950 <span>₽</span></div>
+  <button
+    class="item-product__button button-add"
+    data-article="author-3"
+    data-price="5950"
+    data-type="Авторский букет"
+    data-number="3"
+  >
+    <span>В корзину</span>
+    <span><i class="fa-solid fa-check"></i></span>
+  </button>
+</div>
+
+              <div
+  class="products__item item-product"
+  data-price="11500"
+  data-type="author"
+>
+  <div class="item-product__image">
+    <picture><source srcset="img/author-4.webp" type="image/webp"><img src="img/author-4.jpg" alt="Авторский букет" /></picture>
+  </div>
+  <div class="item-product__title">Авторский букет <span>#4</span></div>
+  <div class="item-product__price">11500 <span>₽</span></div>
+  <button
+    class="item-product__button button-add"
+    data-article="author-4"
+    data-price="11500"
+    data-type="Авторский букет"
+    data-number="4"
+  >
+    <span>В корзину</span>
+    <span><i class="fa-solid fa-check"></i></span>
+  </button>
+</div>
+
+              <div
+  class="products__item item-product"
+  data-price="3700"
+  data-type="author"
+>
+  <div class="item-product__image">
+    <picture><source srcset="img/author-5.webp" type="image/webp"><img src="img/author-5.jpg" alt="Авторский букет" /></picture>
+  </div>
+  <div class="item-product__title">Авторский букет <span>#5</span></div>
+  <div class="item-product__price">3700 <span>₽</span></div>
+  <button
+    class="item-product__button button-add"
+    data-article="author-5"
+    data-price="3700"
+    data-type="Авторский букет"
+    data-number="5"
+  >
+    <span>В корзину</span>
+    <span><i class="fa-solid fa-check"></i></span>
+  </button>
+</div>
+
+              <div
+  class="products__item item-product"
+  data-price="9550"
+  data-type="author"
+>
+  <div class="item-product__image">
+    <picture><source srcset="img/author-6.webp" type="image/webp"><img src="img/author-6.jpg" alt="Авторский букет" /></picture>
+  </div>
+  <div class="item-product__title">Авторский букет <span>#6</span></div>
+  <div class="item-product__price">9550 <span>₽</span></div>
+  <button
+    class="item-product__button button-add"
+    data-article="author-6"
+    data-price="9550"
+    data-type="Авторский букет"
+    data-number="6"
+  >
+    <span>В корзину</span>
+    <span><i class="fa-solid fa-check"></i></span>
+  </button>
+</div>
+
+              <div
+  class="products__item item-product"
+  data-price="2550"
+  data-type="author"
+>
+  <div class="item-product__image">
+    <picture><source srcset="img/author-7.webp" type="image/webp"><img src="img/author-7.jpg" alt="Авторский букет" /></picture>
+  </div>
+  <div class="item-product__title">Авторский букет <span>#7</span></div>
+  <div class="item-product__price">2550 <span>₽</span></div>
+  <button
+    class="item-product__button button-add"
+    data-article="author-7"
+    data-price="2550"
+    data-type="Авторский букет"
+    data-number="7"
+  >
+    <span>В корзину</span>
+    <span><i class="fa-solid fa-check"></i></span>
+  </button>
+</div>
+
+              <div
+  class="products__item item-product"
+  data-price="3150"
+  data-type="author"
+>
+  <div class="item-product__image">
+    <picture><source srcset="img/author-8.webp" type="image/webp"><img src="img/author-8.jpg" alt="Авторский букет" /></picture>
+  </div>
+  <div class="item-product__title">Авторский букет <span>#8</span></div>
+  <div class="item-product__price">3150 <span>₽</span></div>
+  <button
+    class="item-product__button button-add"
+    data-article="author-8"
+    data-price="3150"
+    data-type="Авторский букет"
+    data-number="8"
+  >
+    <span>В корзину</span>
+    <span><i class="fa-solid fa-check"></i></span>
+  </button>
+</div>
+
+              <div
+  class="products__item item-product"
+  data-price="3050"
+  data-type="author"
+>
+  <div class="item-product__image">
+    <picture><source srcset="img/author-9.webp" type="image/webp"><img src="img/author-9.jpg" alt="Авторский букет" /></picture>
+  </div>
+  <div class="item-product__title">Авторский букет <span>#9</span></div>
+  <div class="item-product__price">3050 <span>₽</span></div>
+  <button
+    class="item-product__button button-add"
+    data-article="author-9"
+    data-price="3050"
+    data-type="Авторский букет"
+    data-number="9"
+  >
+    <span>В корзину</span>
+    <span><i class="fa-solid fa-check"></i></span>
+  </button>
+</div>
+
+              <div
+  class="products__item item-product"
+  data-price="1950"
+  data-type="author"
+>
+  <div class="item-product__image">
+    <picture><source srcset="img/author-10.webp" type="image/webp"><img src="img/author-10.jpg" alt="Авторский букет" /></picture>
+  </div>
+  <div class="item-product__title">Авторский букет <span>#10</span></div>
+  <div class="item-product__price">1950 <span>₽</span></div>
+  <button
+    class="item-product__button button-add"
+    data-article="author-10"
+    data-price="1950"
+    data-type="Авторский букет"
+    data-number="10"
+  >
+    <span>В корзину</span>
+    <span><i class="fa-solid fa-check"></i></span>
+  </button>
+</div>
+
+              <div
+  class="products__item item-product"
+  data-price="3350"
+  data-type="author"
+>
+  <div class="item-product__image">
+    <picture><source srcset="img/author-11.webp" type="image/webp"><img src="img/author-11.jpg" alt="Авторский букет" /></picture>
+  </div>
+  <div class="item-product__title">Авторский букет <span>#11</span></div>
+  <div class="item-product__price">3350 <span>₽</span></div>
+  <button
+    class="item-product__button button-add"
+    data-article="author-11"
+    data-price="3350"
+    data-type="Авторский букет"
+    data-number="11"
+  >
+    <span>В корзину</span>
+    <span><i class="fa-solid fa-check"></i></span>
+  </button>
+</div>
+
+              <div
+  class="products__item item-product"
+  data-price="2000"
+  data-type="author"
+>
+  <div class="item-product__image">
+    <picture><source srcset="img/author-12.webp" type="image/webp"><img src="img/author-12.jpg" alt="Авторский букет" /></picture>
+  </div>
+  <div class="item-product__title">Авторский букет <span>#12</span></div>
+  <div class="item-product__price">2000 <span>₽</span></div>
+  <button
+    class="item-product__button button-add"
+    data-article="author-12"
+    data-price="2000"
+    data-type="Авторский букет"
+    data-number="12"
+  >
+    <span>В корзину</span>
+    <span><i class="fa-solid fa-check"></i></span>
+  </button>
+</div>
+
+              <div
+  class="products__item item-product"
+  data-price="3950"
+  data-type="author"
+>
+  <div class="item-product__image">
+    <picture><source srcset="img/author-13.webp" type="image/webp"><img src="img/author-13.jpg" alt="Авторский букет" /></picture>
+  </div>
+  <div class="item-product__title">Авторский букет <span>#13</span></div>
+  <div class="item-product__price">3950 <span>₽</span></div>
+  <button
+    class="item-product__button button-add"
+    data-article="author-13"
+    data-price="3950"
+    data-type="Авторский букет"
+    data-number="13"
+  >
+    <span>В корзину</span>
+    <span><i class="fa-solid fa-check"></i></span>
+  </button>
+</div>
+
+              <div
+  class="products__item item-product"
+  data-price="4250"
+  data-type="author"
+>
+  <div class="item-product__image">
+    <picture><source srcset="img/author-14.webp" type="image/webp"><img src="img/author-14.jpg" alt="Авторский букет" /></picture>
+  </div>
+  <div class="item-product__title">Авторский букет <span>#14</span></div>
+  <div class="item-product__price">4250 <span>₽</span></div>
+  <button
+    class="item-product__button button-add"
+    data-article="author-14"
+    data-price="4250"
+    data-type="Авторский букет"
+    data-number="14"
+  >
+    <span>В корзину</span>
+    <span><i class="fa-solid fa-check"></i></span>
+  </button>
+</div>
+
+              <div
+  class="products__item item-product"
+  data-price="10000"
+  data-type="author"
+>
+  <div class="item-product__image">
+    <picture><source srcset="img/author-15.webp" type="image/webp"><img src="img/author-15.jpg" alt="Авторский букет" /></picture>
+  </div>
+  <div class="item-product__title">Авторский букет <span>#15</span></div>
+  <div class="item-product__price">10000 <span>₽</span></div>
+  <button
+    class="item-product__button button-add"
+    data-article="author-15"
+    data-price="10000"
+    data-type="Авторский букет"
+    data-number="15"
+  >
+    <span>В корзину</span>
+    <span><i class="fa-solid fa-check"></i></span>
+  </button>
+</div>
+
+              <div
+  class="products__item item-product"
+  data-price="2750"
+  data-type="author"
+>
+  <div class="item-product__image">
+    <picture><source srcset="img/author-16.webp" type="image/webp"><img src="img/author-16.jpg" alt="Авторский букет" /></picture>
+  </div>
+  <div class="item-product__title">Авторский букет <span>#16</span></div>
+  <div class="item-product__price">2750 <span>₽</span></div>
+  <button
+    class="item-product__button button-add"
+    data-article="author-16"
+    data-price="2750"
+    data-type="Авторский букет"
+    data-number="16"
+  >
+    <span>В корзину</span>
+    <span><i class="fa-solid fa-check"></i></span>
+  </button>
+</div>
+
+              <div
+  class="products__item item-product"
+  data-price="10500"
+  data-type="author"
+>
+  <div class="item-product__image">
+    <picture><source srcset="img/author-17.webp" type="image/webp"><img src="img/author-17.jpg" alt="Авторский букет" /></picture>
+  </div>
+  <div class="item-product__title">Авторский букет <span>#17</span></div>
+  <div class="item-product__price">10500 <span>₽</span></div>
+  <button
+    class="item-product__button button-add"
+    data-article="author-17"
+    data-price="10500"
+    data-type="Авторский букет"
+    data-number="17"
+  >
+    <span>В корзину</span>
+    <span><i class="fa-solid fa-check"></i></span>
+  </button>
+</div>
+
+              <div
+  class="products__item item-product"
+  data-price="3150"
+  data-type="author"
+>
+  <div class="item-product__image">
+    <picture><source srcset="img/author-18.webp" type="image/webp"><img src="img/author-18.jpg" alt="Авторский букет" /></picture>
+  </div>
+  <div class="item-product__title">Авторский букет <span>#18</span></div>
+  <div class="item-product__price">3150 <span>₽</span></div>
+  <button
+    class="item-product__button button-add"
+    data-article="author-18"
+    data-price="3150"
+    data-type="Авторский букет"
+    data-number="18"
+  >
+    <span>В корзину</span>
+    <span><i class="fa-solid fa-check"></i></span>
+  </button>
+</div>
+
+              <div
+  class="products__item item-product"
+  data-price="4000"
+  data-type="author"
+>
+  <div class="item-product__image">
+    <picture><source srcset="img/author-19.webp" type="image/webp"><img src="img/author-19.jpg" alt="Авторский букет" /></picture>
+  </div>
+  <div class="item-product__title">Авторский букет <span>#19</span></div>
+  <div class="item-product__price">4000 <span>₽</span></div>
+  <button
+    class="item-product__button button-add"
+    data-article="author-19"
+    data-price="4000"
+    data-type="Авторский букет"
+    data-number="19"
+  >
+    <span>В корзину</span>
+    <span><i class="fa-solid fa-check"></i></span>
+  </button>
+</div>
+
+              <div
+  class="products__item item-product"
+  data-price="3300"
+  data-type="author"
+>
+  <div class="item-product__image">
+    <picture><source srcset="img/author-20.webp" type="image/webp"><img src="img/author-20.jpg" alt="Авторский букет" /></picture>
+  </div>
+  <div class="item-product__title">Авторский букет <span>#20</span></div>
+  <div class="item-product__price">3300 <span>₽</span></div>
+  <button
+    class="item-product__button button-add"
+    data-article="author-20"
+    data-price="3300"
+    data-type="Авторский букет"
+    data-number="20"
+  >
+    <span>В корзину</span>
+    <span><i class="fa-solid fa-check"></i></span>
+  </button>
+</div>
+
+              <div
+  class="products__item item-product"
+  data-price="1950"
+  data-type="author"
+>
+  <div class="item-product__image">
+    <picture><source srcset="img/author-21.webp" type="image/webp"><img src="img/author-21.jpg" alt="Авторский букет" /></picture>
+  </div>
+  <div class="item-product__title">Авторский букет <span>#21</span></div>
+  <div class="item-product__price">1950 <span>₽</span></div>
+  <button
+    class="item-product__button button-add"
+    data-article="author-21"
+    data-price="1950"
+    data-type="Авторский букет"
+    data-number="21"
+  >
+    <span>В корзину</span>
+    <span><i class="fa-solid fa-check"></i></span>
+  </button>
+</div>
+
+              <div
+  class="products__item item-product"
+  data-price="2650"
+  data-type="author"
+>
+  <div class="item-product__image">
+    <picture><source srcset="img/author-22.webp" type="image/webp"><img src="img/author-22.jpg" alt="Авторский букет" /></picture>
+  </div>
+  <div class="item-product__title">Авторский букет <span>#22</span></div>
+  <div class="item-product__price">2650 <span>₽</span></div>
+  <button
+    class="item-product__button button-add"
+    data-article="author-22"
+    data-price="2650"
+    data-type="Авторский букет"
+    data-number="22"
+  >
+    <span>В корзину</span>
+    <span><i class="fa-solid fa-check"></i></span>
+  </button>
+</div>
+
+              <div
+  class="products__item item-product"
+  data-price="3650"
+  data-type="author"
+>
+  <div class="item-product__image">
+    <picture><source srcset="img/author-23.webp" type="image/webp"><img src="img/author-23.jpg" alt="Авторский букет" /></picture>
+  </div>
+  <div class="item-product__title">Авторский букет <span>#23</span></div>
+  <div class="item-product__price">3650 <span>₽</span></div>
+  <button
+    class="item-product__button button-add"
+    data-article="author-23"
+    data-price="3650"
+    data-type="Авторский букет"
+    data-number="23"
+  >
+    <span>В корзину</span>
+    <span><i class="fa-solid fa-check"></i></span>
+  </button>
+</div>
+
+              <div
+  class="products__item item-product"
+  data-price="3100"
+  data-type="author"
+>
+  <div class="item-product__image">
+    <picture><source srcset="img/author-24.webp" type="image/webp"><img src="img/author-24.jpg" alt="Авторский букет" /></picture>
+  </div>
+  <div class="item-product__title">Авторский букет <span>#24</span></div>
+  <div class="item-product__price">3100 <span>₽</span></div>
+  <button
+    class="item-product__button button-add"
+    data-article="author-24"
+    data-price="3100"
+    data-type="Авторский букет"
+    data-number="24"
+  >
+    <span>В корзину</span>
+    <span><i class="fa-solid fa-check"></i></span>
+  </button>
+</div>
+
+              <div
+  class="products__item item-product"
+  data-price="2300"
+  data-type="author"
+>
+  <div class="item-product__image">
+    <picture><source srcset="img/author-25.webp" type="image/webp"><img src="img/author-25.jpg" alt="Авторский букет" /></picture>
+  </div>
+  <div class="item-product__title">Авторский букет <span>#25</span></div>
+  <div class="item-product__price">2300 <span>₽</span></div>
+  <button
+    class="item-product__button button-add"
+    data-article="author-25"
+    data-price="2300"
+    data-type="Авторский букет"
+    data-number="25"
+  >
+    <span>В корзину</span>
+    <span><i class="fa-solid fa-check"></i></span>
+  </button>
+</div>
+
+              <div
+  class="products__item item-product"
+  data-price="7250"
+  data-type="author"
+>
+  <div class="item-product__image">
+    <picture><source srcset="img/author-26.webp" type="image/webp"><img src="img/author-26.jpg" alt="Авторский букет" /></picture>
+  </div>
+  <div class="item-product__title">Авторский букет <span>#26</span></div>
+  <div class="item-product__price">7250 <span>₽</span></div>
+  <button
+    class="item-product__button button-add"
+    data-article="author-26"
+    data-price="7250"
+    data-type="Авторский букет"
+    data-number="26"
+  >
+    <span>В корзину</span>
+    <span><i class="fa-solid fa-check"></i></span>
+  </button>
+</div>
+
+              <div
+  class="products__item item-product"
+  data-price="3850"
+  data-type="author"
+>
+  <div class="item-product__image">
+    <picture><source srcset="img/author-27.webp" type="image/webp"><img src="img/author-27.jpg" alt="Авторский букет" /></picture>
+  </div>
+  <div class="item-product__title">Авторский букет <span>#27</span></div>
+  <div class="item-product__price">3850 <span>₽</span></div>
+  <button
+    class="item-product__button button-add"
+    data-article="author-27"
+    data-price="3850"
+    data-type="Авторский букет"
+    data-number="27"
+  >
+    <span>В корзину</span>
+    <span><i class="fa-solid fa-check"></i></span>
+  </button>
+</div>
+
+              <div
+  class="products__item item-product"
+  data-price="3150"
+  data-type="author"
+>
+  <div class="item-product__image">
+    <picture><source srcset="img/author-28.webp" type="image/webp"><img src="img/author-28.jpg" alt="Авторский букет" /></picture>
+  </div>
+  <div class="item-product__title">Авторский букет <span>#28</span></div>
+  <div class="item-product__price">3150 <span>₽</span></div>
+  <button
+    class="item-product__button button-add"
+    data-article="author-28"
+    data-price="3150"
+    data-type="Авторский букет"
+    data-number="28"
+  >
+    <span>В корзину</span>
+    <span><i class="fa-solid fa-check"></i></span>
+  </button>
+</div>
+
+              <div
+  class="products__item item-product"
+  data-price="5700"
+  data-type="author"
+>
+  <div class="item-product__image">
+    <picture><source srcset="img/author-29.webp" type="image/webp"><img src="img/author-29.jpg" alt="Авторский букет" /></picture>
+  </div>
+  <div class="item-product__title">Авторский букет <span>#29</span></div>
+  <div class="item-product__price">5700 <span>₽</span></div>
+  <button
+    class="item-product__button button-add"
+    data-article="author-29"
+    data-price="5700"
+    data-type="Авторский букет"
+    data-number="29"
+  >
+    <span>В корзину</span>
+    <span><i class="fa-solid fa-check"></i></span>
+  </button>
+</div>
+
+              <div
+  class="products__item item-product"
+  data-price="5000"
+  data-type="author"
+>
+  <div class="item-product__image">
+    <picture><source srcset="img/author-30.webp" type="image/webp"><img src="img/author-30.jpg" alt="Авторский букет" /></picture>
+  </div>
+  <div class="item-product__title">Авторский букет <span>#30</span></div>
+  <div class="item-product__price">5000 <span>₽</span></div>
+  <button
+    class="item-product__button button-add"
+    data-article="author-30"
+    data-price="5000"
+    data-type="Авторский букет"
+    data-number="30"
+  >
+    <span>В корзину</span>
+    <span><i class="fa-solid fa-check"></i></span>
+  </button>
+</div>
+
+              <div
+  class="products__item item-product"
+  data-price="3000"
+  data-type="author"
+>
+  <div class="item-product__image">
+    <picture><source srcset="img/author-31.webp" type="image/webp"><img src="img/author-31.jpg" alt="Авторский букет" /></picture>
+  </div>
+  <div class="item-product__title">Авторский букет <span>#31</span></div>
+  <div class="item-product__price">3000 <span>₽</span></div>
+  <button
+    class="item-product__button button-add"
+    data-article="author-31"
+    data-price="3000"
+    data-type="Авторский букет"
+    data-number="31"
+  >
+    <span>В корзину</span>
+    <span><i class="fa-solid fa-check"></i></span>
+  </button>
+</div>
+
+              <div
+  class="products__item item-product"
+  data-price="3850"
+  data-type="author"
+>
+  <div class="item-product__image">
+    <picture><source srcset="img/author-32.webp" type="image/webp"><img src="img/author-32.jpg" alt="Авторский букет" /></picture>
+  </div>
+  <div class="item-product__title">Авторский букет <span>#32</span></div>
+  <div class="item-product__price">3850 <span>₽</span></div>
+  <button
+    class="item-product__button button-add"
+    data-article="author-32"
+    data-price="3850"
+    data-type="Авторский букет"
+    data-number="32"
+  >
+    <span>В корзину</span>
+    <span><i class="fa-solid fa-check"></i></span>
+  </button>
+</div>
+
+              <div
+  class="products__item item-product"
+  data-price="4150"
+  data-type="author"
+>
+  <div class="item-product__image">
+    <picture><source srcset="img/author-33.webp" type="image/webp"><img src="img/author-33.jpg" alt="Авторский букет" /></picture>
+  </div>
+  <div class="item-product__title">Авторский букет <span>#33</span></div>
+  <div class="item-product__price">4150 <span>₽</span></div>
+  <button
+    class="item-product__button button-add"
+    data-article="author-33"
+    data-price="4150"
+    data-type="Авторский букет"
+    data-number="33"
+  >
+    <span>В корзину</span>
+    <span><i class="fa-solid fa-check"></i></span>
+  </button>
+</div>
+
+              <div
+  class="products__item item-product"
+  data-price="3650"
+  data-type="author"
+>
+  <div class="item-product__image">
+    <picture><source srcset="img/author-34.webp" type="image/webp"><img src="img/author-34.jpg" alt="Авторский букет" /></picture>
+  </div>
+  <div class="item-product__title">Авторский букет <span>#34</span></div>
+  <div class="item-product__price">3650 <span>₽</span></div>
+  <button
+    class="item-product__button button-add"
+    data-article="author-34"
+    data-price="3650"
+    data-type="Авторский букет"
+    data-number="34"
+  >
+    <span>В корзину</span>
+    <span><i class="fa-solid fa-check"></i></span>
+  </button>
+</div>
+
+              <div
+  class="products__item item-product"
+  data-price="2850"
+  data-type="author"
+>
+  <div class="item-product__image">
+    <picture><source srcset="img/author-35.webp" type="image/webp"><img src="img/author-35.jpg" alt="Авторский букет" /></picture>
+  </div>
+  <div class="item-product__title">Авторский букет <span>#35</span></div>
+  <div class="item-product__price">2850 <span>₽</span></div>
+  <button
+    class="item-product__button button-add"
+    data-article="author-35"
+    data-price="2850"
+    data-type="Авторский букет"
+    data-number="35"
+  >
+    <span>В корзину</span>
+    <span><i class="fa-solid fa-check"></i></span>
+  </button>
+</div>
+
+              <div
+  class="products__item item-product"
+  data-price="5000"
+  data-type="author"
+>
+  <div class="item-product__image">
+    <picture><source srcset="img/author-36.webp" type="image/webp"><img src="img/author-36.jpg" alt="Авторский букет" /></picture>
+  </div>
+  <div class="item-product__title">Авторский букет <span>#36</span></div>
+  <div class="item-product__price">5000 <span>₽</span></div>
+  <button
+    class="item-product__button button-add"
+    data-article="author-36"
+    data-price="5000"
+    data-type="Авторский букет"
+    data-number="36"
+  >
+    <span>В корзину</span>
+    <span><i class="fa-solid fa-check"></i></span>
+  </button>
+</div>
+
+              <div
+  class="products__item item-product"
+  data-price="7950"
+  data-type="author"
+>
+  <div class="item-product__image">
+    <picture><source srcset="img/author-37.webp" type="image/webp"><img src="img/author-37.jpg" alt="Авторский букет" /></picture>
+  </div>
+  <div class="item-product__title">Авторский букет <span>#37</span></div>
+  <div class="item-product__price">7950 <span>₽</span></div>
+  <button
+    class="item-product__button button-add"
+    data-article="author-37"
+    data-price="7950"
+    data-type="Авторский букет"
+    data-number="37"
+  >
+    <span>В корзину</span>
+    <span><i class="fa-solid fa-check"></i></span>
+  </button>
+</div>
+
+              <div
+  class="products__item item-product"
+  data-price="15500"
+  data-type="comp"
+>
+  <div class="item-product__image">
+    <picture><source srcset="img/comp-1.webp" type="image/webp"><img src="img/comp-1.jpg" alt="Композиция" /></picture>
+  </div>
+  <div class="item-product__title">Композиция <span>#1</span></div>
+  <div class="item-product__price">15500 <span>₽</span></div>
+  <button
+    class="item-product__button button-add"
+    data-article="comp-1"
+    data-price="15500"
+    data-type="Композиция"
+    data-number="1"
+  >
+    <span>В корзину</span>
+    <span><i class="fa-solid fa-check"></i></span>
+  </button>
+</div>
+
+              <div
+  class="products__item item-product"
+  data-price="3450"
+  data-type="comp"
+>
+  <div class="item-product__image">
+    <picture><source srcset="img/comp-2.webp" type="image/webp"><img src="img/comp-2.jpg" alt="Композиция" /></picture>
+  </div>
+  <div class="item-product__title">Композиция <span>#2</span></div>
+  <div class="item-product__price">3450 <span>₽</span></div>
+  <button
+    class="item-product__button button-add"
+    data-article="comp-2"
+    data-price="3450"
+    data-type="Композиция"
+    data-number="2"
+  >
+    <span>В корзину</span>
+    <span><i class="fa-solid fa-check"></i></span>
+  </button>
+</div>
+
+              <div
+  class="products__item item-product"
+  data-price="6250"
+  data-type="comp"
+>
+  <div class="item-product__image">
+    <picture><source srcset="img/comp-3.webp" type="image/webp"><img src="img/comp-3.jpg" alt="Композиция" /></picture>
+  </div>
+  <div class="item-product__title">Композиция <span>#3</span></div>
+  <div class="item-product__price">6250 <span>₽</span></div>
+  <button
+    class="item-product__button button-add"
+    data-article="comp-3"
+    data-price="6250"
+    data-type="Композиция"
+    data-number="3"
+  >
+    <span>В корзину</span>
+    <span><i class="fa-solid fa-check"></i></span>
+  </button>
+</div>
+
+              <div
+  class="products__item item-product"
+  data-price="8350"
+  data-type="comp"
+>
+  <div class="item-product__image">
+    <picture><source srcset="img/comp-4.webp" type="image/webp"><img src="img/comp-4.jpg" alt="Композиция" /></picture>
+  </div>
+  <div class="item-product__title">Композиция <span>#4</span></div>
+  <div class="item-product__price">8350 <span>₽</span></div>
+  <button
+    class="item-product__button button-add"
+    data-article="comp-4"
+    data-price="8350"
+    data-type="Композиция"
+    data-number="4"
+  >
+    <span>В корзину</span>
+    <span><i class="fa-solid fa-check"></i></span>
+  </button>
+</div>
+
+              <div
+  class="products__item item-product"
+  data-price="18000"
+  data-type="comp"
+>
+  <div class="item-product__image">
+    <picture><source srcset="img/comp-5.webp" type="image/webp"><img src="img/comp-5.jpg" alt="Композиция" /></picture>
+  </div>
+  <div class="item-product__title">Композиция <span>#5</span></div>
+  <div class="item-product__price">18000 <span>₽</span></div>
+  <button
+    class="item-product__button button-add"
+    data-article="comp-5"
+    data-price="18000"
+    data-type="Композиция"
+    data-number="5"
+  >
+    <span>В корзину</span>
+    <span><i class="fa-solid fa-check"></i></span>
+  </button>
+</div>
+
+              <div
+  class="products__item item-product"
+  data-price="6000"
+  data-type="comp"
+>
+  <div class="item-product__image">
+    <picture><source srcset="img/comp-6.webp" type="image/webp"><img src="img/comp-6.jpg" alt="Композиция" /></picture>
+  </div>
+  <div class="item-product__title">Композиция <span>#6</span></div>
+  <div class="item-product__price">6000 <span>₽</span></div>
+  <button
+    class="item-product__button button-add"
+    data-article="comp-6"
+    data-price="6000"
+    data-type="Композиция"
+    data-number="6"
+  >
+    <span>В корзину</span>
+    <span><i class="fa-solid fa-check"></i></span>
+  </button>
+</div>
+
+              <div
+  class="products__item item-product"
+  data-price="11500"
+  data-type="comp"
+>
+  <div class="item-product__image">
+    <picture><source srcset="img/comp-7.webp" type="image/webp"><img src="img/comp-7.jpg" alt="Композиция" /></picture>
+  </div>
+  <div class="item-product__title">Композиция <span>#7</span></div>
+  <div class="item-product__price">11500 <span>₽</span></div>
+  <button
+    class="item-product__button button-add"
+    data-article="comp-7"
+    data-price="11500"
+    data-type="Композиция"
+    data-number="7"
+  >
+    <span>В корзину</span>
+    <span><i class="fa-solid fa-check"></i></span>
+  </button>
+</div>
+
+              <div
+  class="products__item item-product"
+  data-price="5200"
+  data-type="comp"
+>
+  <div class="item-product__image">
+    <picture><source srcset="img/comp-8.webp" type="image/webp"><img src="img/comp-8.jpg" alt="Композиция" /></picture>
+  </div>
+  <div class="item-product__title">Композиция <span>#8</span></div>
+  <div class="item-product__price">5200 <span>₽</span></div>
+  <button
+    class="item-product__button button-add"
+    data-article="comp-8"
+    data-price="5200"
+    data-type="Композиция"
+    data-number="8"
+  >
+    <span>В корзину</span>
+    <span><i class="fa-solid fa-check"></i></span>
+  </button>
+</div>
+
+              <div
+  class="products__item item-product"
+  data-price="8550"
+  data-type="comp"
+>
+  <div class="item-product__image">
+    <picture><source srcset="img/comp-9.webp" type="image/webp"><img src="img/comp-9.jpg" alt="Композиция" /></picture>
+  </div>
+  <div class="item-product__title">Композиция <span>#9</span></div>
+  <div class="item-product__price">8550 <span>₽</span></div>
+  <button
+    class="item-product__button button-add"
+    data-article="comp-9"
+    data-price="8550"
+    data-type="Композиция"
+    data-number="9"
+  >
+    <span>В корзину</span>
+    <span><i class="fa-solid fa-check"></i></span>
+  </button>
+</div>
+
+              <div
+  class="products__item item-product"
+  data-price="3350"
+  data-type="comp"
+>
+  <div class="item-product__image">
+    <picture><source srcset="img/comp-10.webp" type="image/webp"><img src="img/comp-10.jpg" alt="Композиция" /></picture>
+  </div>
+  <div class="item-product__title">Композиция <span>#10</span></div>
+  <div class="item-product__price">3350 <span>₽</span></div>
+  <button
+    class="item-product__button button-add"
+    data-article="comp-10"
+    data-price="3350"
+    data-type="Композиция"
+    data-number="10"
+  >
+    <span>В корзину</span>
+    <span><i class="fa-solid fa-check"></i></span>
+  </button>
+</div>
+
+              <div
+  class="products__item item-product"
+  data-price="3650"
+  data-type="comp"
+>
+  <div class="item-product__image">
+    <picture><source srcset="img/comp-11.webp" type="image/webp"><img src="img/comp-11.jpg" alt="Композиция" /></picture>
+  </div>
+  <div class="item-product__title">Композиция <span>#11</span></div>
+  <div class="item-product__price">3650 <span>₽</span></div>
+  <button
+    class="item-product__button button-add"
+    data-article="comp-11"
+    data-price="3650"
+    data-type="Композиция"
+    data-number="11"
+  >
+    <span>В корзину</span>
+    <span><i class="fa-solid fa-check"></i></span>
+  </button>
+</div>
+
+              <div
+  class="products__item item-product"
+  data-price="11500"
+  data-type="comp"
+>
+  <div class="item-product__image">
+    <picture><source srcset="img/comp-12.webp" type="image/webp"><img src="img/comp-12.jpg" alt="Композиция" /></picture>
+  </div>
+  <div class="item-product__title">Композиция <span>#12</span></div>
+  <div class="item-product__price">11500 <span>₽</span></div>
+  <button
+    class="item-product__button button-add"
+    data-article="comp-12"
+    data-price="11500"
+    data-type="Композиция"
+    data-number="12"
+  >
+    <span>В корзину</span>
+    <span><i class="fa-solid fa-check"></i></span>
+  </button>
+</div>
+
+              <div
+  class="products__item item-product"
+  data-price="3550"
+  data-type="comp"
+>
+  <div class="item-product__image">
+    <picture><source srcset="img/comp-13.webp" type="image/webp"><img src="img/comp-13.jpg" alt="Композиция" /></picture>
+  </div>
+  <div class="item-product__title">Композиция <span>#13</span></div>
+  <div class="item-product__price">3550 <span>₽</span></div>
+  <button
+    class="item-product__button button-add"
+    data-article="comp-13"
+    data-price="3550"
+    data-type="Композиция"
+    data-number="13"
+  >
+    <span>В корзину</span>
+    <span><i class="fa-solid fa-check"></i></span>
+  </button>
+</div>
+
+              <div
+  class="products__item item-product"
+  data-price="5550"
+  data-type="comp"
+>
+  <div class="item-product__image">
+    <picture><source srcset="img/comp-14.webp" type="image/webp"><img src="img/comp-14.jpg" alt="Композиция" /></picture>
+  </div>
+  <div class="item-product__title">Композиция <span>#14</span></div>
+  <div class="item-product__price">5550 <span>₽</span></div>
+  <button
+    class="item-product__button button-add"
+    data-article="comp-14"
+    data-price="5550"
+    data-type="Композиция"
+    data-number="14"
+  >
+    <span>В корзину</span>
+    <span><i class="fa-solid fa-check"></i></span>
+  </button>
+</div>
+
+              <div
+  class="products__item item-product"
+  data-price="8500"
+  data-type="comp"
+>
+  <div class="item-product__image">
+    <picture><source srcset="img/comp-15.webp" type="image/webp"><img src="img/comp-15.jpg" alt="Композиция" /></picture>
+  </div>
+  <div class="item-product__title">Композиция <span>#15</span></div>
+  <div class="item-product__price">8500 <span>₽</span></div>
+  <button
+    class="item-product__button button-add"
+    data-article="comp-15"
+    data-price="8500"
+    data-type="Композиция"
+    data-number="15"
+  >
+    <span>В корзину</span>
+    <span><i class="fa-solid fa-check"></i></span>
+  </button>
+</div>
+
+              <div
+  class="products__item item-product"
+  data-price="4350"
+  data-type="comp"
+>
+  <div class="item-product__image">
+    <picture><source srcset="img/comp-16.webp" type="image/webp"><img src="img/comp-16.jpg" alt="Композиция" /></picture>
+  </div>
+  <div class="item-product__title">Композиция <span>#16</span></div>
+  <div class="item-product__price">4350 <span>₽</span></div>
+  <button
+    class="item-product__button button-add"
+    data-article="comp-16"
+    data-price="4350"
+    data-type="Композиция"
+    data-number="16"
+  >
+    <span>В корзину</span>
+    <span><i class="fa-solid fa-check"></i></span>
+  </button>
+</div>
+
+              <div
+  class="products__item item-product"
+  data-price="3450"
+  data-type="comp"
+>
+  <div class="item-product__image">
+    <picture><source srcset="img/comp-17.webp" type="image/webp"><img src="img/comp-17.jpg" alt="Композиция" /></picture>
+  </div>
+  <div class="item-product__title">Композиция <span>#17</span></div>
+  <div class="item-product__price">3450 <span>₽</span></div>
+  <button
+    class="item-product__button button-add"
+    data-article="comp-17"
+    data-price="3450"
+    data-type="Композиция"
+    data-number="17"
+  >
+    <span>В корзину</span>
+    <span><i class="fa-solid fa-check"></i></span>
+  </button>
+</div>
+
+              <div
+  class="products__item item-product"
+  data-price="21000"
+  data-type="comp"
+>
+  <div class="item-product__image">
+    <picture><source srcset="img/comp-18.webp" type="image/webp"><img src="img/comp-18.jpg" alt="Композиция" /></picture>
+  </div>
+  <div class="item-product__title">Композиция <span>#18</span></div>
+  <div class="item-product__price">21000 <span>₽</span></div>
+  <button
+    class="item-product__button button-add"
+    data-article="comp-18"
+    data-price="21000"
+    data-type="Композиция"
+    data-number="18"
+  >
+    <span>В корзину</span>
+    <span><i class="fa-solid fa-check"></i></span>
+  </button>
+</div>
+
+              <div
+  class="products__item item-product"
+  data-price="4650"
+  data-type="comp"
+>
+  <div class="item-product__image">
+    <picture><source srcset="img/comp-19.webp" type="image/webp"><img src="img/comp-19.jpg" alt="Композиция" /></picture>
+  </div>
+  <div class="item-product__title">Композиция <span>#19</span></div>
+  <div class="item-product__price">4650 <span>₽</span></div>
+  <button
+    class="item-product__button button-add"
+    data-article="comp-19"
+    data-price="4650"
+    data-type="Композиция"
+    data-number="19"
+  >
+    <span>В корзину</span>
+    <span><i class="fa-solid fa-check"></i></span>
+  </button>
+</div>
+
+              <div
+  class="products__item item-product"
+  data-price="7000"
+  data-type="comp"
+>
+  <div class="item-product__image">
+    <picture><source srcset="img/comp-20.webp" type="image/webp"><img src="img/comp-20.jpg" alt="Композиция" /></picture>
+  </div>
+  <div class="item-product__title">Композиция <span>#20</span></div>
+  <div class="item-product__price">7000 <span>₽</span></div>
+  <button
+    class="item-product__button button-add"
+    data-article="comp-20"
+    data-price="7000"
+    data-type="Композиция"
+    data-number="20"
+  >
+    <span>В корзину</span>
+    <span><i class="fa-solid fa-check"></i></span>
+  </button>
+</div>
+
+              <div
+  class="products__item item-product"
+  data-price="3350"
+  data-type="comp"
+>
+  <div class="item-product__image">
+    <picture><source srcset="img/comp-21.webp" type="image/webp"><img src="img/comp-21.jpg" alt="Композиция" /></picture>
+  </div>
+  <div class="item-product__title">Композиция <span>#21</span></div>
+  <div class="item-product__price">3350 <span>₽</span></div>
+  <button
+    class="item-product__button button-add"
+    data-article="comp-21"
+    data-price="3350"
+    data-type="Композиция"
+    data-number="21"
+  >
+    <span>В корзину</span>
+    <span><i class="fa-solid fa-check"></i></span>
+  </button>
+</div>
+
+              <div
+  class="products__item item-product"
+  data-price="22500"
+  data-type="comp"
+>
+  <div class="item-product__image">
+    <picture><source srcset="img/comp-22.webp" type="image/webp"><img src="img/comp-22.jpg" alt="Композиция" /></picture>
+  </div>
+  <div class="item-product__title">Композиция <span>#22</span></div>
+  <div class="item-product__price">22500 <span>₽</span></div>
+  <button
+    class="item-product__button button-add"
+    data-article="comp-22"
+    data-price="22500"
+    data-type="Композиция"
+    data-number="22"
+  >
+    <span>В корзину</span>
+    <span><i class="fa-solid fa-check"></i></span>
+  </button>
+</div>
+
+              <div
+  class="products__item item-product"
+  data-price="7000"
+  data-type="comp"
+>
+  <div class="item-product__image">
+    <picture><source srcset="img/comp-23.webp" type="image/webp"><img src="img/comp-23.jpg" alt="Композиция" /></picture>
+  </div>
+  <div class="item-product__title">Композиция <span>#23</span></div>
+  <div class="item-product__price">7000 <span>₽</span></div>
+  <button
+    class="item-product__button button-add"
+    data-article="comp-23"
+    data-price="7000"
+    data-type="Композиция"
+    data-number="23"
+  >
+    <span>В корзину</span>
+    <span><i class="fa-solid fa-check"></i></span>
+  </button>
+</div>
+
+              <div
+  class="products__item item-product"
+  data-price="4550"
+  data-type="comp"
+>
+  <div class="item-product__image">
+    <picture><source srcset="img/comp-24.webp" type="image/webp"><img src="img/comp-24.jpg" alt="Композиция" /></picture>
+  </div>
+  <div class="item-product__title">Композиция <span>#24</span></div>
+  <div class="item-product__price">4550 <span>₽</span></div>
+  <button
+    class="item-product__button button-add"
+    data-article="comp-24"
+    data-price="4550"
+    data-type="Композиция"
+    data-number="24"
+  >
+    <span>В корзину</span>
+    <span><i class="fa-solid fa-check"></i></span>
+  </button>
+</div>
+
+              <div
+  class="products__item item-product"
+  data-price="9550"
+  data-type="comp"
+>
+  <div class="item-product__image">
+    <picture><source srcset="img/comp-25.webp" type="image/webp"><img src="img/comp-25.jpg" alt="Композиция" /></picture>
+  </div>
+  <div class="item-product__title">Композиция <span>#25</span></div>
+  <div class="item-product__price">9550 <span>₽</span></div>
+  <button
+    class="item-product__button button-add"
+    data-article="comp-25"
+    data-price="9550"
+    data-type="Композиция"
+    data-number="25"
+  >
+    <span>В корзину</span>
+    <span><i class="fa-solid fa-check"></i></span>
+  </button>
+</div>
+
+              <div
+  class="products__item item-product"
+  data-price="7550"
+  data-type="comp"
+>
+  <div class="item-product__image">
+    <picture><source srcset="img/comp-26.webp" type="image/webp"><img src="img/comp-26.jpg" alt="Композиция" /></picture>
+  </div>
+  <div class="item-product__title">Композиция <span>#26</span></div>
+  <div class="item-product__price">7550 <span>₽</span></div>
+  <button
+    class="item-product__button button-add"
+    data-article="comp-26"
+    data-price="7550"
+    data-type="Композиция"
+    data-number="26"
+  >
+    <span>В корзину</span>
+    <span><i class="fa-solid fa-check"></i></span>
+  </button>
+</div>
+
+              <div
+  class="products__item item-product"
+  data-price="7550"
+  data-type="comp"
+>
+  <div class="item-product__image">
+    <picture><source srcset="img/comp-27.webp" type="image/webp"><img src="img/comp-27.jpg" alt="Композиция" /></picture>
+  </div>
+  <div class="item-product__title">Композиция <span>#27</span></div>
+  <div class="item-product__price">7550 <span>₽</span></div>
+  <button
+    class="item-product__button button-add"
+    data-article="comp-27"
+    data-price="7550"
+    data-type="Композиция"
+    data-number="27"
+  >
+    <span>В корзину</span>
+    <span><i class="fa-solid fa-check"></i></span>
+  </button>
+</div>
+
+              <div
+  class="products__item item-product"
+  data-price="3650"
+  data-type="comp"
+>
+  <div class="item-product__image">
+    <picture><source srcset="img/comp-28.webp" type="image/webp"><img src="img/comp-28.jpg" alt="Композиция" /></picture>
+  </div>
+  <div class="item-product__title">Композиция <span>#28</span></div>
+  <div class="item-product__price">3650 <span>₽</span></div>
+  <button
+    class="item-product__button button-add"
+    data-article="comp-28"
+    data-price="3650"
+    data-type="Композиция"
+    data-number="28"
+  >
+    <span>В корзину</span>
+    <span><i class="fa-solid fa-check"></i></span>
+  </button>
+</div>
+
+              <div
+  class="products__item item-product"
+  data-price="3750"
+  data-type="comp"
+>
+  <div class="item-product__image">
+    <picture><source srcset="img/comp-29.webp" type="image/webp"><img src="img/comp-29.jpg" alt="Композиция" /></picture>
+  </div>
+  <div class="item-product__title">Композиция <span>#29</span></div>
+  <div class="item-product__price">3750 <span>₽</span></div>
+  <button
+    class="item-product__button button-add"
+    data-article="comp-29"
+    data-price="3750"
+    data-type="Композиция"
+    data-number="29"
+  >
+    <span>В корзину</span>
+    <span><i class="fa-solid fa-check"></i></span>
+  </button>
+</div>
+
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+  <div class="container">
+    <div class="footer__body">
+      <div class="footer__column">
+        <div class="footer__logo">krasota</div>
+        <div class="footer__address">Самара, проспект Карла Маркса, 163</div>
+      </div>
+      <div class="footer__icons">
+        <a class="footer__icon"
+          ><img src="img/tg-icon.svg" alt="Телеграм"
+        /></a>
+        <a class="footer__icon"
+          ><img src="img/ig-icon.svg" alt="Инстаграм"
+        /></a>
+        <a class="footer__icon"
+          ><img src="img/pin-icon.svg" alt="Пинтерест"
+        /></a>
+      </div>
+      <div class="footer__links">
+			<a class="footer__link">Политика конфиденциальности</a>
+			<a href="delivery.html" class="footer__link">Доставка и оплата</a>
+			<a href="contacts.html" class="footer__link">Контакты</a>
+		</div>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <div class="cart-wrapper lock-padding closed">
+	<div class="cart closed">
+	  <div class="cart__body">
+	    <div class="cart__header">
+	      <div class="cart__title">Корзина</div>
+	      <div class="cart__close"><i class="fa-solid fa-xmark"></i></div>
+	    </div>
+	    <div class="cart__items">
+	      <div class="cart__item item-cart">
+	        <div class="item-cart__left">
+	          <div class="item-cart__image">
+	            <picture><source srcset="img/mono-7.webp" type="image/webp"><img src="img/mono-7.jpg" alt="Моно-букет" /></picture>
+	          </div>
+	          <div class="item-cart__info">
+	            <div class="item-cart__title">Моно-букет <span>#7</span></div>
+	            <div class="item-cart__price">1800 ₽</div>
+	          </div>
+	        </div>
+	        <div class="item-cart__right">
+	          <div class="item-cart__counter">
+	            <i
+	              class="item-cart__minus item-cart__button disabled fa-solid fa-minus"
+	              data-article="mono-7"
+	            ></i>
+	            <div class="item-cart__count cart-count" data-article="mono-7">5</div>
+	            <i
+	              class="item-cart__plus item-cart__button fa-solid fa-plus"
+	              data-article="mono-7"
+	            ></i>
+	          </div>
+	          <i
+	            class="item-cart__delete fa-solid fa-trash"
+	            data-article="mono-7"
+	          ></i>
+	        </div>
+	      </div>
+	    </div>
+	    <a href="order.html" class="cart__button">Оформить заказ</a>
+		 <div class="cart__icon">
+			<img src="img/cart-icon.svg" alt="Иконка корзины">
+		 </div>
+	  </div>
+	</div>
+</div>
+<div class="cart__icon-mobile hide">
+	<img src="img/cart-icon.svg" alt="Иконка корзины">
+</div>
+  </body>
+</html>
