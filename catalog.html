@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -9,7 +9,7 @@
   />
   <link
     rel="apple-touch-icon"
-    sizes="76x76"
+    sizes="152x152"
     href="favicon/apple-touch-icon.png"
   />
   <link
@@ -25,20 +25,20 @@
     href="favicon/favicon-16x16.png"
   />
   <link rel="manifest" href="favicon/site.webmanifest" />
-  <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#d69e9f" />
-  <meta name="msapplication-TileColor" content="#d69e9f" />
+  <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#cd9a9b" />
+  <meta name="msapplication-TileColor" content="#ffffff" />
   <meta name="theme-color" content="#ffffff" />
-  <link rel="stylesheet" href="css/icons.css?_v=20230719132957" />
-  <link rel="stylesheet" href="css/style.min.css?_v=20230719132957" />
-  <script src="js/app.min.js?_v=20230719132957" defer></script>
+  <link rel="stylesheet" href="css/icons.css?_v=20230720000622" />
+  <link rel="stylesheet" href="css/style.min.css?_v=20230720000622" />
+  <script src="js/app.min.js?_v=20230720000622" defer></script>
   <title>Каталог</title>
 </head>
 
 
   <body class="products">
-	<div class="loader active lock-padding">
+    <div class="loader active lock-padding">
   <div class="loader__body">
-    <div class="spinner"">
+    <div class="spinner">
       <span>k</span>
       <span>r</span>
       <span>a</span>
@@ -49,7 +49,12 @@
     </div>
   </div>
 </div>
-
+<script>
+	document.querySelector(".loader").addEventListener("wheel", (e) => {
+		e.preventDefault();
+    e.stopPropagation();
+	})
+</script>
     <div class="wrapper">
       <header class="header lock-padding catalog">
 	<div class="container">
@@ -170,13 +175,19 @@
         <section class="products__content">
           <div class="container">
             <div class="products__items">
+					
               <div
   class="products__item item-product"
   data-price="3850"
   data-type="mono"
 >
   <div class="item-product__image">
-    <picture><source srcset="img/mono-1.webp" type="image/webp"><img src="img/mono-1.jpg" alt="Моно-букет" /></picture>
+    <div class="item-product__loader"></div>
+    <img
+      data-src="img/mono-1.jpg"
+      src="img/plug.png"
+      alt="Моно-букет"
+    />
   </div>
   <div class="item-product__title">Моно-букет <span>#1</span></div>
   <div class="item-product__price">3850 <span>₽</span></div>
@@ -198,7 +209,12 @@
   data-type="mono"
 >
   <div class="item-product__image">
-    <picture><source srcset="img/mono-2.webp" type="image/webp"><img src="img/mono-2.jpg" alt="Моно-букет" /></picture>
+    <div class="item-product__loader"></div>
+    <img
+      data-src="img/mono-2.jpg"
+      src="img/plug.png"
+      alt="Моно-букет"
+    />
   </div>
   <div class="item-product__title">Моно-букет <span>#2</span></div>
   <div class="item-product__price">2350 <span>₽</span></div>
@@ -220,7 +236,12 @@
   data-type="mono"
 >
   <div class="item-product__image">
-    <picture><source srcset="img/mono-3.webp" type="image/webp"><img src="img/mono-3.jpg" alt="Моно-букет" /></picture>
+    <div class="item-product__loader"></div>
+    <img
+      data-src="img/mono-3.jpg"
+      src="img/plug.png"
+      alt="Моно-букет"
+    />
   </div>
   <div class="item-product__title">Моно-букет <span>#3</span></div>
   <div class="item-product__price">11750 <span>₽</span></div>
@@ -242,7 +263,12 @@
   data-type="mono"
 >
   <div class="item-product__image">
-    <picture><source srcset="img/mono-4.webp" type="image/webp"><img src="img/mono-4.jpg" alt="Моно-букет" /></picture>
+    <div class="item-product__loader"></div>
+    <img
+      data-src="img/mono-4.jpg"
+      src="img/plug.png"
+      alt="Моно-букет"
+    />
   </div>
   <div class="item-product__title">Моно-букет <span>#4</span></div>
   <div class="item-product__price">2150 <span>₽</span></div>
@@ -264,7 +290,12 @@
   data-type="mono"
 >
   <div class="item-product__image">
-    <picture><source srcset="img/mono-5.webp" type="image/webp"><img src="img/mono-5.jpg" alt="Моно-букет" /></picture>
+    <div class="item-product__loader"></div>
+    <img
+      data-src="img/mono-5.jpg"
+      src="img/plug.png"
+      alt="Моно-букет"
+    />
   </div>
   <div class="item-product__title">Моно-букет <span>#5</span></div>
   <div class="item-product__price">3550 <span>₽</span></div>
@@ -286,7 +317,12 @@
   data-type="mono"
 >
   <div class="item-product__image">
-    <picture><source srcset="img/mono-6.webp" type="image/webp"><img src="img/mono-6.jpg" alt="Моно-букет" /></picture>
+    <div class="item-product__loader"></div>
+    <img
+      data-src="img/mono-6.jpg"
+      src="img/plug.png"
+      alt="Моно-букет"
+    />
   </div>
   <div class="item-product__title">Моно-букет <span>#6</span></div>
   <div class="item-product__price">2350 <span>₽</span></div>
@@ -308,7 +344,12 @@
   data-type="mono"
 >
   <div class="item-product__image">
-    <picture><source srcset="img/mono-7.webp" type="image/webp"><img src="img/mono-7.jpg" alt="Моно-букет" /></picture>
+    <div class="item-product__loader"></div>
+    <img
+      data-src="img/mono-7.jpg"
+      src="img/plug.png"
+      alt="Моно-букет"
+    />
   </div>
   <div class="item-product__title">Моно-букет <span>#7</span></div>
   <div class="item-product__price">3950 <span>₽</span></div>
@@ -330,7 +371,12 @@
   data-type="mono"
 >
   <div class="item-product__image">
-    <picture><source srcset="img/mono-8.webp" type="image/webp"><img src="img/mono-8.jpg" alt="Моно-букет" /></picture>
+    <div class="item-product__loader"></div>
+    <img
+      data-src="img/mono-8.jpg"
+      src="img/plug.png"
+      alt="Моно-букет"
+    />
   </div>
   <div class="item-product__title">Моно-букет <span>#8</span></div>
   <div class="item-product__price">2350 <span>₽</span></div>
@@ -352,7 +398,12 @@
   data-type="mono"
 >
   <div class="item-product__image">
-    <picture><source srcset="img/mono-9.webp" type="image/webp"><img src="img/mono-9.jpg" alt="Моно-букет" /></picture>
+    <div class="item-product__loader"></div>
+    <img
+      data-src="img/mono-9.jpg"
+      src="img/plug.png"
+      alt="Моно-букет"
+    />
   </div>
   <div class="item-product__title">Моно-букет <span>#9</span></div>
   <div class="item-product__price">2950 <span>₽</span></div>
@@ -374,7 +425,12 @@
   data-type="mono"
 >
   <div class="item-product__image">
-    <picture><source srcset="img/mono-10.webp" type="image/webp"><img src="img/mono-10.jpg" alt="Моно-букет" /></picture>
+    <div class="item-product__loader"></div>
+    <img
+      data-src="img/mono-10.jpg"
+      src="img/plug.png"
+      alt="Моно-букет"
+    />
   </div>
   <div class="item-product__title">Моно-букет <span>#10</span></div>
   <div class="item-product__price">2150 <span>₽</span></div>
@@ -396,7 +452,12 @@
   data-type="mono"
 >
   <div class="item-product__image">
-    <picture><source srcset="img/mono-11.webp" type="image/webp"><img src="img/mono-11.jpg" alt="Моно-букет" /></picture>
+    <div class="item-product__loader"></div>
+    <img
+      data-src="img/mono-11.jpg"
+      src="img/plug.png"
+      alt="Моно-букет"
+    />
   </div>
   <div class="item-product__title">Моно-букет <span>#11</span></div>
   <div class="item-product__price">1450 <span>₽</span></div>
@@ -418,7 +479,12 @@
   data-type="mono"
 >
   <div class="item-product__image">
-    <picture><source srcset="img/mono-12.webp" type="image/webp"><img src="img/mono-12.jpg" alt="Моно-букет" /></picture>
+    <div class="item-product__loader"></div>
+    <img
+      data-src="img/mono-12.jpg"
+      src="img/plug.png"
+      alt="Моно-букет"
+    />
   </div>
   <div class="item-product__title">Моно-букет <span>#12</span></div>
   <div class="item-product__price">4550 <span>₽</span></div>
@@ -440,7 +506,12 @@
   data-type="mono"
 >
   <div class="item-product__image">
-    <picture><source srcset="img/mono-13.webp" type="image/webp"><img src="img/mono-13.jpg" alt="Моно-букет" /></picture>
+    <div class="item-product__loader"></div>
+    <img
+      data-src="img/mono-13.jpg"
+      src="img/plug.png"
+      alt="Моно-букет"
+    />
   </div>
   <div class="item-product__title">Моно-букет <span>#13</span></div>
   <div class="item-product__price">11550 <span>₽</span></div>
@@ -462,7 +533,12 @@
   data-type="mono"
 >
   <div class="item-product__image">
-    <picture><source srcset="img/mono-14.webp" type="image/webp"><img src="img/mono-14.jpg" alt="Моно-букет" /></picture>
+    <div class="item-product__loader"></div>
+    <img
+      data-src="img/mono-14.jpg"
+      src="img/plug.png"
+      alt="Моно-букет"
+    />
   </div>
   <div class="item-product__title">Моно-букет <span>#14</span></div>
   <div class="item-product__price">2550 <span>₽</span></div>
@@ -484,7 +560,12 @@
   data-type="mono"
 >
   <div class="item-product__image">
-    <picture><source srcset="img/mono-15.webp" type="image/webp"><img src="img/mono-15.jpg" alt="Моно-букет" /></picture>
+    <div class="item-product__loader"></div>
+    <img
+      data-src="img/mono-15.jpg"
+      src="img/plug.png"
+      alt="Моно-букет"
+    />
   </div>
   <div class="item-product__title">Моно-букет <span>#15</span></div>
   <div class="item-product__price">1250 <span>₽</span></div>
@@ -506,7 +587,12 @@
   data-type="mono"
 >
   <div class="item-product__image">
-    <picture><source srcset="img/mono-16.webp" type="image/webp"><img src="img/mono-16.jpg" alt="Моно-букет" /></picture>
+    <div class="item-product__loader"></div>
+    <img
+      data-src="img/mono-16.jpg"
+      src="img/plug.png"
+      alt="Моно-букет"
+    />
   </div>
   <div class="item-product__title">Моно-букет <span>#16</span></div>
   <div class="item-product__price">5350 <span>₽</span></div>
@@ -528,7 +614,12 @@
   data-type="mono"
 >
   <div class="item-product__image">
-    <picture><source srcset="img/mono-17.webp" type="image/webp"><img src="img/mono-17.jpg" alt="Моно-букет" /></picture>
+    <div class="item-product__loader"></div>
+    <img
+      data-src="img/mono-17.jpg"
+      src="img/plug.png"
+      alt="Моно-букет"
+    />
   </div>
   <div class="item-product__title">Моно-букет <span>#17</span></div>
   <div class="item-product__price">3150 <span>₽</span></div>
@@ -550,7 +641,12 @@
   data-type="mono"
 >
   <div class="item-product__image">
-    <picture><source srcset="img/mono-18.webp" type="image/webp"><img src="img/mono-18.jpg" alt="Моно-букет" /></picture>
+    <div class="item-product__loader"></div>
+    <img
+      data-src="img/mono-18.jpg"
+      src="img/plug.png"
+      alt="Моно-букет"
+    />
   </div>
   <div class="item-product__title">Моно-букет <span>#18</span></div>
   <div class="item-product__price">2850 <span>₽</span></div>
@@ -572,7 +668,12 @@
   data-type="mono"
 >
   <div class="item-product__image">
-    <picture><source srcset="img/mono-19.webp" type="image/webp"><img src="img/mono-19.jpg" alt="Моно-букет" /></picture>
+    <div class="item-product__loader"></div>
+    <img
+      data-src="img/mono-19.jpg"
+      src="img/plug.png"
+      alt="Моно-букет"
+    />
   </div>
   <div class="item-product__title">Моно-букет <span>#19</span></div>
   <div class="item-product__price">2350 <span>₽</span></div>
@@ -594,7 +695,12 @@
   data-type="mono"
 >
   <div class="item-product__image">
-    <picture><source srcset="img/mono-20.webp" type="image/webp"><img src="img/mono-20.jpg" alt="Моно-букет" /></picture>
+    <div class="item-product__loader"></div>
+    <img
+      data-src="img/mono-20.jpg"
+      src="img/plug.png"
+      alt="Моно-букет"
+    />
   </div>
   <div class="item-product__title">Моно-букет <span>#20</span></div>
   <div class="item-product__price">2150 <span>₽</span></div>
@@ -616,7 +722,12 @@
   data-type="mono"
 >
   <div class="item-product__image">
-    <picture><source srcset="img/mono-21.webp" type="image/webp"><img src="img/mono-21.jpg" alt="Моно-букет" /></picture>
+    <div class="item-product__loader"></div>
+    <img
+      data-src="img/mono-21.jpg"
+      src="img/plug.png"
+      alt="Моно-букет"
+    />
   </div>
   <div class="item-product__title">Моно-букет <span>#21</span></div>
   <div class="item-product__price">3000 <span>₽</span></div>
@@ -638,7 +749,12 @@
   data-type="mono"
 >
   <div class="item-product__image">
-    <picture><source srcset="img/mono-22.webp" type="image/webp"><img src="img/mono-22.jpg" alt="Моно-букет" /></picture>
+    <div class="item-product__loader"></div>
+    <img
+      data-src="img/mono-22.jpg"
+      src="img/plug.png"
+      alt="Моно-букет"
+    />
   </div>
   <div class="item-product__title">Моно-букет <span>#22</span></div>
   <div class="item-product__price">3750 <span>₽</span></div>
@@ -660,7 +776,12 @@
   data-type="mono"
 >
   <div class="item-product__image">
-    <picture><source srcset="img/mono-23.webp" type="image/webp"><img src="img/mono-23.jpg" alt="Моно-букет" /></picture>
+    <div class="item-product__loader"></div>
+    <img
+      data-src="img/mono-23.jpg"
+      src="img/plug.png"
+      alt="Моно-букет"
+    />
   </div>
   <div class="item-product__title">Моно-букет <span>#23</span></div>
   <div class="item-product__price">2450 <span>₽</span></div>
@@ -682,7 +803,12 @@
   data-type="mono"
 >
   <div class="item-product__image">
-    <picture><source srcset="img/mono-24.webp" type="image/webp"><img src="img/mono-24.jpg" alt="Моно-букет" /></picture>
+    <div class="item-product__loader"></div>
+    <img
+      data-src="img/mono-24.jpg"
+      src="img/plug.png"
+      alt="Моно-букет"
+    />
   </div>
   <div class="item-product__title">Моно-букет <span>#24</span></div>
   <div class="item-product__price">3450 <span>₽</span></div>
@@ -704,7 +830,12 @@
   data-type="mono"
 >
   <div class="item-product__image">
-    <picture><source srcset="img/mono-25.webp" type="image/webp"><img src="img/mono-25.jpg" alt="Моно-букет" /></picture>
+    <div class="item-product__loader"></div>
+    <img
+      data-src="img/mono-25.jpg"
+      src="img/plug.png"
+      alt="Моно-букет"
+    />
   </div>
   <div class="item-product__title">Моно-букет <span>#25</span></div>
   <div class="item-product__price">3950 <span>₽</span></div>
@@ -726,7 +857,12 @@
   data-type="mono"
 >
   <div class="item-product__image">
-    <picture><source srcset="img/mono-26.webp" type="image/webp"><img src="img/mono-26.jpg" alt="Моно-букет" /></picture>
+    <div class="item-product__loader"></div>
+    <img
+      data-src="img/mono-26.jpg"
+      src="img/plug.png"
+      alt="Моно-букет"
+    />
   </div>
   <div class="item-product__title">Моно-букет <span>#26</span></div>
   <div class="item-product__price">2350 <span>₽</span></div>
@@ -748,7 +884,12 @@
   data-type="mono"
 >
   <div class="item-product__image">
-    <picture><source srcset="img/mono-27.webp" type="image/webp"><img src="img/mono-27.jpg" alt="Моно-букет" /></picture>
+    <div class="item-product__loader"></div>
+    <img
+      data-src="img/mono-27.jpg"
+      src="img/plug.png"
+      alt="Моно-букет"
+    />
   </div>
   <div class="item-product__title">Моно-букет <span>#27</span></div>
   <div class="item-product__price">4350 <span>₽</span></div>
@@ -770,7 +911,12 @@
   data-type="mono"
 >
   <div class="item-product__image">
-    <picture><source srcset="img/mono-28.webp" type="image/webp"><img src="img/mono-28.jpg" alt="Моно-букет" /></picture>
+    <div class="item-product__loader"></div>
+    <img
+      data-src="img/mono-28.jpg"
+      src="img/plug.png"
+      alt="Моно-букет"
+    />
   </div>
   <div class="item-product__title">Моно-букет <span>#28</span></div>
   <div class="item-product__price">2550 <span>₽</span></div>
@@ -792,7 +938,12 @@
   data-type="mono"
 >
   <div class="item-product__image">
-    <picture><source srcset="img/mono-29.webp" type="image/webp"><img src="img/mono-29.jpg" alt="Моно-букет" /></picture>
+    <div class="item-product__loader"></div>
+    <img
+      data-src="img/mono-29.jpg"
+      src="img/plug.png"
+      alt="Моно-букет"
+    />
   </div>
   <div class="item-product__title">Моно-букет <span>#29</span></div>
   <div class="item-product__price">2950 <span>₽</span></div>
@@ -814,7 +965,12 @@
   data-type="mono"
 >
   <div class="item-product__image">
-    <picture><source srcset="img/mono-30.webp" type="image/webp"><img src="img/mono-30.jpg" alt="Моно-букет" /></picture>
+    <div class="item-product__loader"></div>
+    <img
+      data-src="img/mono-30.jpg"
+      src="img/plug.png"
+      alt="Моно-букет"
+    />
   </div>
   <div class="item-product__title">Моно-букет <span>#30</span></div>
   <div class="item-product__price">7500 <span>₽</span></div>
@@ -836,7 +992,12 @@
   data-type="mono"
 >
   <div class="item-product__image">
-    <picture><source srcset="img/mono-31.webp" type="image/webp"><img src="img/mono-31.jpg" alt="Моно-букет" /></picture>
+    <div class="item-product__loader"></div>
+    <img
+      data-src="img/mono-31.jpg"
+      src="img/plug.png"
+      alt="Моно-букет"
+    />
   </div>
   <div class="item-product__title">Моно-букет <span>#31</span></div>
   <div class="item-product__price">1750 <span>₽</span></div>
@@ -858,7 +1019,12 @@
   data-type="mono"
 >
   <div class="item-product__image">
-    <picture><source srcset="img/mono-32.webp" type="image/webp"><img src="img/mono-32.jpg" alt="Моно-букет" /></picture>
+    <div class="item-product__loader"></div>
+    <img
+      data-src="img/mono-32.jpg"
+      src="img/plug.png"
+      alt="Моно-букет"
+    />
   </div>
   <div class="item-product__title">Моно-букет <span>#32</span></div>
   <div class="item-product__price">3150 <span>₽</span></div>
@@ -880,7 +1046,12 @@
   data-type="mono"
 >
   <div class="item-product__image">
-    <picture><source srcset="img/mono-33.webp" type="image/webp"><img src="img/mono-33.jpg" alt="Моно-букет" /></picture>
+    <div class="item-product__loader"></div>
+    <img
+      data-src="img/mono-33.jpg"
+      src="img/plug.png"
+      alt="Моно-букет"
+    />
   </div>
   <div class="item-product__title">Моно-букет <span>#33</span></div>
   <div class="item-product__price">12500 <span>₽</span></div>
@@ -902,7 +1073,12 @@
   data-type="mono"
 >
   <div class="item-product__image">
-    <picture><source srcset="img/mono-34.webp" type="image/webp"><img src="img/mono-34.jpg" alt="Моно-букет" /></picture>
+    <div class="item-product__loader"></div>
+    <img
+      data-src="img/mono-34.jpg"
+      src="img/plug.png"
+      alt="Моно-букет"
+    />
   </div>
   <div class="item-product__title">Моно-букет <span>#34</span></div>
   <div class="item-product__price">7150 <span>₽</span></div>
@@ -924,7 +1100,12 @@
   data-type="mono"
 >
   <div class="item-product__image">
-    <picture><source srcset="img/mono-35.webp" type="image/webp"><img src="img/mono-35.jpg" alt="Моно-букет" /></picture>
+    <div class="item-product__loader"></div>
+    <img
+      data-src="img/mono-35.jpg"
+      src="img/plug.png"
+      alt="Моно-букет"
+    />
   </div>
   <div class="item-product__title">Моно-букет <span>#35</span></div>
   <div class="item-product__price">2750 <span>₽</span></div>
@@ -946,7 +1127,12 @@
   data-type="mono"
 >
   <div class="item-product__image">
-    <picture><source srcset="img/mono-36.webp" type="image/webp"><img src="img/mono-36.jpg" alt="Моно-букет" /></picture>
+    <div class="item-product__loader"></div>
+    <img
+      data-src="img/mono-36.jpg"
+      src="img/plug.png"
+      alt="Моно-букет"
+    />
   </div>
   <div class="item-product__title">Моно-букет <span>#36</span></div>
   <div class="item-product__price">4350 <span>₽</span></div>
@@ -968,7 +1154,12 @@
   data-type="mono"
 >
   <div class="item-product__image">
-    <picture><source srcset="img/mono-37.webp" type="image/webp"><img src="img/mono-37.jpg" alt="Моно-букет" /></picture>
+    <div class="item-product__loader"></div>
+    <img
+      data-src="img/mono-37.jpg"
+      src="img/plug.png"
+      alt="Моно-букет"
+    />
   </div>
   <div class="item-product__title">Моно-букет <span>#37</span></div>
   <div class="item-product__price">6150 <span>₽</span></div>
@@ -990,7 +1181,12 @@
   data-type="mono"
 >
   <div class="item-product__image">
-    <picture><source srcset="img/mono-38.webp" type="image/webp"><img src="img/mono-38.jpg" alt="Моно-букет" /></picture>
+    <div class="item-product__loader"></div>
+    <img
+      data-src="img/mono-38.jpg"
+      src="img/plug.png"
+      alt="Моно-букет"
+    />
   </div>
   <div class="item-product__title">Моно-букет <span>#38</span></div>
   <div class="item-product__price">3150 <span>₽</span></div>
@@ -1012,7 +1208,12 @@
   data-type="mono"
 >
   <div class="item-product__image">
-    <picture><source srcset="img/mono-39.webp" type="image/webp"><img src="img/mono-39.jpg" alt="Моно-букет" /></picture>
+    <div class="item-product__loader"></div>
+    <img
+      data-src="img/mono-39.jpg"
+      src="img/plug.png"
+      alt="Моно-букет"
+    />
   </div>
   <div class="item-product__title">Моно-букет <span>#39</span></div>
   <div class="item-product__price">3550 <span>₽</span></div>
@@ -1034,7 +1235,12 @@
   data-type="mono"
 >
   <div class="item-product__image">
-    <picture><source srcset="img/mono-40.webp" type="image/webp"><img src="img/mono-40.jpg" alt="Моно-букет" /></picture>
+    <div class="item-product__loader"></div>
+    <img
+      data-src="img/mono-40.jpg"
+      src="img/plug.png"
+      alt="Моно-букет"
+    />
   </div>
   <div class="item-product__title">Моно-букет <span>#40</span></div>
   <div class="item-product__price">21550 <span>₽</span></div>
@@ -1056,7 +1262,12 @@
   data-type="mono"
 >
   <div class="item-product__image">
-    <picture><source srcset="img/mono-41.webp" type="image/webp"><img src="img/mono-41.jpg" alt="Моно-букет" /></picture>
+    <div class="item-product__loader"></div>
+    <img
+      data-src="img/mono-41.jpg"
+      src="img/plug.png"
+      alt="Моно-букет"
+    />
   </div>
   <div class="item-product__title">Моно-букет <span>#41</span></div>
   <div class="item-product__price">2150 <span>₽</span></div>
@@ -1078,7 +1289,12 @@
   data-type="mono"
 >
   <div class="item-product__image">
-    <picture><source srcset="img/mono-42.webp" type="image/webp"><img src="img/mono-42.jpg" alt="Моно-букет" /></picture>
+    <div class="item-product__loader"></div>
+    <img
+      data-src="img/mono-42.jpg"
+      src="img/plug.png"
+      alt="Моно-букет"
+    />
   </div>
   <div class="item-product__title">Моно-букет <span>#42</span></div>
   <div class="item-product__price">4950 <span>₽</span></div>
@@ -1100,7 +1316,12 @@
   data-type="mono"
 >
   <div class="item-product__image">
-    <picture><source srcset="img/mono-43.webp" type="image/webp"><img src="img/mono-43.jpg" alt="Моно-букет" /></picture>
+    <div class="item-product__loader"></div>
+    <img
+      data-src="img/mono-43.jpg"
+      src="img/plug.png"
+      alt="Моно-букет"
+    />
   </div>
   <div class="item-product__title">Моно-букет <span>#43</span></div>
   <div class="item-product__price">4150 <span>₽</span></div>
@@ -1122,7 +1343,12 @@
   data-type="mono"
 >
   <div class="item-product__image">
-    <picture><source srcset="img/mono-44.webp" type="image/webp"><img src="img/mono-44.jpg" alt="Моно-букет" /></picture>
+    <div class="item-product__loader"></div>
+    <img
+      data-src="img/mono-44.jpg"
+      src="img/plug.png"
+      alt="Моно-букет"
+    />
   </div>
   <div class="item-product__title">Моно-букет <span>#44</span></div>
   <div class="item-product__price">3750 <span>₽</span></div>
@@ -1144,7 +1370,12 @@
   data-type="mono"
 >
   <div class="item-product__image">
-    <picture><source srcset="img/mono-45.webp" type="image/webp"><img src="img/mono-45.jpg" alt="Моно-букет" /></picture>
+    <div class="item-product__loader"></div>
+    <img
+      data-src="img/mono-45.jpg"
+      src="img/plug.png"
+      alt="Моно-букет"
+    />
   </div>
   <div class="item-product__title">Моно-букет <span>#45</span></div>
   <div class="item-product__price">1850 <span>₽</span></div>
@@ -1166,7 +1397,12 @@
   data-type="mono"
 >
   <div class="item-product__image">
-    <picture><source srcset="img/mono-46.webp" type="image/webp"><img src="img/mono-46.jpg" alt="Моно-букет" /></picture>
+    <div class="item-product__loader"></div>
+    <img
+      data-src="img/mono-46.jpg"
+      src="img/plug.png"
+      alt="Моно-букет"
+    />
   </div>
   <div class="item-product__title">Моно-букет <span>#46</span></div>
   <div class="item-product__price">3000 <span>₽</span></div>
@@ -1188,7 +1424,12 @@
   data-type="mono"
 >
   <div class="item-product__image">
-    <picture><source srcset="img/mono-47.webp" type="image/webp"><img src="img/mono-47.jpg" alt="Моно-букет" /></picture>
+    <div class="item-product__loader"></div>
+    <img
+      data-src="img/mono-47.jpg"
+      src="img/plug.png"
+      alt="Моно-букет"
+    />
   </div>
   <div class="item-product__title">Моно-букет <span>#47</span></div>
   <div class="item-product__price">3350 <span>₽</span></div>
@@ -1210,7 +1451,12 @@
   data-type="mono"
 >
   <div class="item-product__image">
-    <picture><source srcset="img/mono-48.webp" type="image/webp"><img src="img/mono-48.jpg" alt="Моно-букет" /></picture>
+    <div class="item-product__loader"></div>
+    <img
+      data-src="img/mono-48.jpg"
+      src="img/plug.png"
+      alt="Моно-букет"
+    />
   </div>
   <div class="item-product__title">Моно-букет <span>#48</span></div>
   <div class="item-product__price">6550 <span>₽</span></div>
@@ -1232,7 +1478,12 @@
   data-type="mono"
 >
   <div class="item-product__image">
-    <picture><source srcset="img/mono-49.webp" type="image/webp"><img src="img/mono-49.jpg" alt="Моно-букет" /></picture>
+    <div class="item-product__loader"></div>
+    <img
+      data-src="img/mono-49.jpg"
+      src="img/plug.png"
+      alt="Моно-букет"
+    />
   </div>
   <div class="item-product__title">Моно-букет <span>#49</span></div>
   <div class="item-product__price">4000 <span>₽</span></div>
@@ -1254,7 +1505,12 @@
   data-type="mono"
 >
   <div class="item-product__image">
-    <picture><source srcset="img/mono-50.webp" type="image/webp"><img src="img/mono-50.jpg" alt="Моно-букет" /></picture>
+    <div class="item-product__loader"></div>
+    <img
+      data-src="img/mono-50.jpg"
+      src="img/plug.png"
+      alt="Моно-букет"
+    />
   </div>
   <div class="item-product__title">Моно-букет <span>#50</span></div>
   <div class="item-product__price">3350 <span>₽</span></div>
@@ -1276,7 +1532,12 @@
   data-type="mono"
 >
   <div class="item-product__image">
-    <picture><source srcset="img/mono-51.webp" type="image/webp"><img src="img/mono-51.jpg" alt="Моно-букет" /></picture>
+    <div class="item-product__loader"></div>
+    <img
+      data-src="img/mono-51.jpg"
+      src="img/plug.png"
+      alt="Моно-букет"
+    />
   </div>
   <div class="item-product__title">Моно-букет <span>#51</span></div>
   <div class="item-product__price">3150 <span>₽</span></div>
@@ -1298,7 +1559,12 @@
   data-type="mono"
 >
   <div class="item-product__image">
-    <picture><source srcset="img/mono-52.webp" type="image/webp"><img src="img/mono-52.jpg" alt="Моно-букет" /></picture>
+    <div class="item-product__loader"></div>
+    <img
+      data-src="img/mono-52.jpg"
+      src="img/plug.png"
+      alt="Моно-букет"
+    />
   </div>
   <div class="item-product__title">Моно-букет <span>#52</span></div>
   <div class="item-product__price">4550 <span>₽</span></div>
@@ -1320,7 +1586,12 @@
   data-type="mono"
 >
   <div class="item-product__image">
-    <picture><source srcset="img/mono-53.webp" type="image/webp"><img src="img/mono-53.jpg" alt="Моно-букет" /></picture>
+    <div class="item-product__loader"></div>
+    <img
+      data-src="img/mono-53.jpg"
+      src="img/plug.png"
+      alt="Моно-букет"
+    />
   </div>
   <div class="item-product__title">Моно-букет <span>#53</span></div>
   <div class="item-product__price">3750 <span>₽</span></div>
@@ -1342,7 +1613,12 @@
   data-type="mono"
 >
   <div class="item-product__image">
-    <picture><source srcset="img/mono-54.webp" type="image/webp"><img src="img/mono-54.jpg" alt="Моно-букет" /></picture>
+    <div class="item-product__loader"></div>
+    <img
+      data-src="img/mono-54.jpg"
+      src="img/plug.png"
+      alt="Моно-букет"
+    />
   </div>
   <div class="item-product__title">Моно-букет <span>#54</span></div>
   <div class="item-product__price">2150 <span>₽</span></div>
@@ -1364,7 +1640,12 @@
   data-type="mono"
 >
   <div class="item-product__image">
-    <picture><source srcset="img/mono-55.webp" type="image/webp"><img src="img/mono-55.jpg" alt="Моно-букет" /></picture>
+    <div class="item-product__loader"></div>
+    <img
+      data-src="img/mono-55.jpg"
+      src="img/plug.png"
+      alt="Моно-букет"
+    />
   </div>
   <div class="item-product__title">Моно-букет <span>#55</span></div>
   <div class="item-product__price">4050 <span>₽</span></div>
@@ -1386,7 +1667,12 @@
   data-type="mono"
 >
   <div class="item-product__image">
-    <picture><source srcset="img/mono-56.webp" type="image/webp"><img src="img/mono-56.jpg" alt="Моно-букет" /></picture>
+    <div class="item-product__loader"></div>
+    <img
+      data-src="img/mono-56.jpg"
+      src="img/plug.png"
+      alt="Моно-букет"
+    />
   </div>
   <div class="item-product__title">Моно-букет <span>#56</span></div>
   <div class="item-product__price">3950 <span>₽</span></div>
@@ -1408,7 +1694,12 @@
   data-type="mono"
 >
   <div class="item-product__image">
-    <picture><source srcset="img/mono-57.webp" type="image/webp"><img src="img/mono-57.jpg" alt="Моно-букет" /></picture>
+    <div class="item-product__loader"></div>
+    <img
+      data-src="img/mono-57.jpg"
+      src="img/plug.png"
+      alt="Моно-букет"
+    />
   </div>
   <div class="item-product__title">Моно-букет <span>#57</span></div>
   <div class="item-product__price">2350 <span>₽</span></div>
@@ -1430,7 +1721,12 @@
   data-type="author"
 >
   <div class="item-product__image">
-    <picture><source srcset="img/author-1.webp" type="image/webp"><img src="img/author-1.jpg" alt="Авторский букет" /></picture>
+    <div class="item-product__loader"></div>
+    <img
+      data-src="img/author-1.jpg"
+      src="img/plug.png"
+      alt="Авторский букет"
+    />
   </div>
   <div class="item-product__title">Авторский букет <span>#1</span></div>
   <div class="item-product__price">2150 <span>₽</span></div>
@@ -1452,7 +1748,12 @@
   data-type="author"
 >
   <div class="item-product__image">
-    <picture><source srcset="img/author-2.webp" type="image/webp"><img src="img/author-2.jpg" alt="Авторский букет" /></picture>
+    <div class="item-product__loader"></div>
+    <img
+      data-src="img/author-2.jpg"
+      src="img/plug.png"
+      alt="Авторский букет"
+    />
   </div>
   <div class="item-product__title">Авторский букет <span>#2</span></div>
   <div class="item-product__price">2650 <span>₽</span></div>
@@ -1474,7 +1775,12 @@
   data-type="author"
 >
   <div class="item-product__image">
-    <picture><source srcset="img/author-3.webp" type="image/webp"><img src="img/author-3.jpg" alt="Авторский букет" /></picture>
+    <div class="item-product__loader"></div>
+    <img
+      data-src="img/author-3.jpg"
+      src="img/plug.png"
+      alt="Авторский букет"
+    />
   </div>
   <div class="item-product__title">Авторский букет <span>#3</span></div>
   <div class="item-product__price">5950 <span>₽</span></div>
@@ -1496,7 +1802,12 @@
   data-type="author"
 >
   <div class="item-product__image">
-    <picture><source srcset="img/author-4.webp" type="image/webp"><img src="img/author-4.jpg" alt="Авторский букет" /></picture>
+    <div class="item-product__loader"></div>
+    <img
+      data-src="img/author-4.jpg"
+      src="img/plug.png"
+      alt="Авторский букет"
+    />
   </div>
   <div class="item-product__title">Авторский букет <span>#4</span></div>
   <div class="item-product__price">11500 <span>₽</span></div>
@@ -1518,7 +1829,12 @@
   data-type="author"
 >
   <div class="item-product__image">
-    <picture><source srcset="img/author-5.webp" type="image/webp"><img src="img/author-5.jpg" alt="Авторский букет" /></picture>
+    <div class="item-product__loader"></div>
+    <img
+      data-src="img/author-5.jpg"
+      src="img/plug.png"
+      alt="Авторский букет"
+    />
   </div>
   <div class="item-product__title">Авторский букет <span>#5</span></div>
   <div class="item-product__price">3700 <span>₽</span></div>
@@ -1540,7 +1856,12 @@
   data-type="author"
 >
   <div class="item-product__image">
-    <picture><source srcset="img/author-6.webp" type="image/webp"><img src="img/author-6.jpg" alt="Авторский букет" /></picture>
+    <div class="item-product__loader"></div>
+    <img
+      data-src="img/author-6.jpg"
+      src="img/plug.png"
+      alt="Авторский букет"
+    />
   </div>
   <div class="item-product__title">Авторский букет <span>#6</span></div>
   <div class="item-product__price">9550 <span>₽</span></div>
@@ -1562,7 +1883,12 @@
   data-type="author"
 >
   <div class="item-product__image">
-    <picture><source srcset="img/author-7.webp" type="image/webp"><img src="img/author-7.jpg" alt="Авторский букет" /></picture>
+    <div class="item-product__loader"></div>
+    <img
+      data-src="img/author-7.jpg"
+      src="img/plug.png"
+      alt="Авторский букет"
+    />
   </div>
   <div class="item-product__title">Авторский букет <span>#7</span></div>
   <div class="item-product__price">2550 <span>₽</span></div>
@@ -1584,7 +1910,12 @@
   data-type="author"
 >
   <div class="item-product__image">
-    <picture><source srcset="img/author-8.webp" type="image/webp"><img src="img/author-8.jpg" alt="Авторский букет" /></picture>
+    <div class="item-product__loader"></div>
+    <img
+      data-src="img/author-8.jpg"
+      src="img/plug.png"
+      alt="Авторский букет"
+    />
   </div>
   <div class="item-product__title">Авторский букет <span>#8</span></div>
   <div class="item-product__price">3150 <span>₽</span></div>
@@ -1606,7 +1937,12 @@
   data-type="author"
 >
   <div class="item-product__image">
-    <picture><source srcset="img/author-9.webp" type="image/webp"><img src="img/author-9.jpg" alt="Авторский букет" /></picture>
+    <div class="item-product__loader"></div>
+    <img
+      data-src="img/author-9.jpg"
+      src="img/plug.png"
+      alt="Авторский букет"
+    />
   </div>
   <div class="item-product__title">Авторский букет <span>#9</span></div>
   <div class="item-product__price">3050 <span>₽</span></div>
@@ -1628,7 +1964,12 @@
   data-type="author"
 >
   <div class="item-product__image">
-    <picture><source srcset="img/author-10.webp" type="image/webp"><img src="img/author-10.jpg" alt="Авторский букет" /></picture>
+    <div class="item-product__loader"></div>
+    <img
+      data-src="img/author-10.jpg"
+      src="img/plug.png"
+      alt="Авторский букет"
+    />
   </div>
   <div class="item-product__title">Авторский букет <span>#10</span></div>
   <div class="item-product__price">1950 <span>₽</span></div>
@@ -1650,7 +1991,12 @@
   data-type="author"
 >
   <div class="item-product__image">
-    <picture><source srcset="img/author-11.webp" type="image/webp"><img src="img/author-11.jpg" alt="Авторский букет" /></picture>
+    <div class="item-product__loader"></div>
+    <img
+      data-src="img/author-11.jpg"
+      src="img/plug.png"
+      alt="Авторский букет"
+    />
   </div>
   <div class="item-product__title">Авторский букет <span>#11</span></div>
   <div class="item-product__price">3350 <span>₽</span></div>
@@ -1672,7 +2018,12 @@
   data-type="author"
 >
   <div class="item-product__image">
-    <picture><source srcset="img/author-12.webp" type="image/webp"><img src="img/author-12.jpg" alt="Авторский букет" /></picture>
+    <div class="item-product__loader"></div>
+    <img
+      data-src="img/author-12.jpg"
+      src="img/plug.png"
+      alt="Авторский букет"
+    />
   </div>
   <div class="item-product__title">Авторский букет <span>#12</span></div>
   <div class="item-product__price">2000 <span>₽</span></div>
@@ -1694,7 +2045,12 @@
   data-type="author"
 >
   <div class="item-product__image">
-    <picture><source srcset="img/author-13.webp" type="image/webp"><img src="img/author-13.jpg" alt="Авторский букет" /></picture>
+    <div class="item-product__loader"></div>
+    <img
+      data-src="img/author-13.jpg"
+      src="img/plug.png"
+      alt="Авторский букет"
+    />
   </div>
   <div class="item-product__title">Авторский букет <span>#13</span></div>
   <div class="item-product__price">3950 <span>₽</span></div>
@@ -1716,7 +2072,12 @@
   data-type="author"
 >
   <div class="item-product__image">
-    <picture><source srcset="img/author-14.webp" type="image/webp"><img src="img/author-14.jpg" alt="Авторский букет" /></picture>
+    <div class="item-product__loader"></div>
+    <img
+      data-src="img/author-14.jpg"
+      src="img/plug.png"
+      alt="Авторский букет"
+    />
   </div>
   <div class="item-product__title">Авторский букет <span>#14</span></div>
   <div class="item-product__price">4250 <span>₽</span></div>
@@ -1738,7 +2099,12 @@
   data-type="author"
 >
   <div class="item-product__image">
-    <picture><source srcset="img/author-15.webp" type="image/webp"><img src="img/author-15.jpg" alt="Авторский букет" /></picture>
+    <div class="item-product__loader"></div>
+    <img
+      data-src="img/author-15.jpg"
+      src="img/plug.png"
+      alt="Авторский букет"
+    />
   </div>
   <div class="item-product__title">Авторский букет <span>#15</span></div>
   <div class="item-product__price">10000 <span>₽</span></div>
@@ -1760,7 +2126,12 @@
   data-type="author"
 >
   <div class="item-product__image">
-    <picture><source srcset="img/author-16.webp" type="image/webp"><img src="img/author-16.jpg" alt="Авторский букет" /></picture>
+    <div class="item-product__loader"></div>
+    <img
+      data-src="img/author-16.jpg"
+      src="img/plug.png"
+      alt="Авторский букет"
+    />
   </div>
   <div class="item-product__title">Авторский букет <span>#16</span></div>
   <div class="item-product__price">2750 <span>₽</span></div>
@@ -1782,7 +2153,12 @@
   data-type="author"
 >
   <div class="item-product__image">
-    <picture><source srcset="img/author-17.webp" type="image/webp"><img src="img/author-17.jpg" alt="Авторский букет" /></picture>
+    <div class="item-product__loader"></div>
+    <img
+      data-src="img/author-17.jpg"
+      src="img/plug.png"
+      alt="Авторский букет"
+    />
   </div>
   <div class="item-product__title">Авторский букет <span>#17</span></div>
   <div class="item-product__price">10500 <span>₽</span></div>
@@ -1804,7 +2180,12 @@
   data-type="author"
 >
   <div class="item-product__image">
-    <picture><source srcset="img/author-18.webp" type="image/webp"><img src="img/author-18.jpg" alt="Авторский букет" /></picture>
+    <div class="item-product__loader"></div>
+    <img
+      data-src="img/author-18.jpg"
+      src="img/plug.png"
+      alt="Авторский букет"
+    />
   </div>
   <div class="item-product__title">Авторский букет <span>#18</span></div>
   <div class="item-product__price">3150 <span>₽</span></div>
@@ -1826,7 +2207,12 @@
   data-type="author"
 >
   <div class="item-product__image">
-    <picture><source srcset="img/author-19.webp" type="image/webp"><img src="img/author-19.jpg" alt="Авторский букет" /></picture>
+    <div class="item-product__loader"></div>
+    <img
+      data-src="img/author-19.jpg"
+      src="img/plug.png"
+      alt="Авторский букет"
+    />
   </div>
   <div class="item-product__title">Авторский букет <span>#19</span></div>
   <div class="item-product__price">4000 <span>₽</span></div>
@@ -1848,7 +2234,12 @@
   data-type="author"
 >
   <div class="item-product__image">
-    <picture><source srcset="img/author-20.webp" type="image/webp"><img src="img/author-20.jpg" alt="Авторский букет" /></picture>
+    <div class="item-product__loader"></div>
+    <img
+      data-src="img/author-20.jpg"
+      src="img/plug.png"
+      alt="Авторский букет"
+    />
   </div>
   <div class="item-product__title">Авторский букет <span>#20</span></div>
   <div class="item-product__price">3300 <span>₽</span></div>
@@ -1870,7 +2261,12 @@
   data-type="author"
 >
   <div class="item-product__image">
-    <picture><source srcset="img/author-21.webp" type="image/webp"><img src="img/author-21.jpg" alt="Авторский букет" /></picture>
+    <div class="item-product__loader"></div>
+    <img
+      data-src="img/author-21.jpg"
+      src="img/plug.png"
+      alt="Авторский букет"
+    />
   </div>
   <div class="item-product__title">Авторский букет <span>#21</span></div>
   <div class="item-product__price">1950 <span>₽</span></div>
@@ -1892,7 +2288,12 @@
   data-type="author"
 >
   <div class="item-product__image">
-    <picture><source srcset="img/author-22.webp" type="image/webp"><img src="img/author-22.jpg" alt="Авторский букет" /></picture>
+    <div class="item-product__loader"></div>
+    <img
+      data-src="img/author-22.jpg"
+      src="img/plug.png"
+      alt="Авторский букет"
+    />
   </div>
   <div class="item-product__title">Авторский букет <span>#22</span></div>
   <div class="item-product__price">2650 <span>₽</span></div>
@@ -1914,7 +2315,12 @@
   data-type="author"
 >
   <div class="item-product__image">
-    <picture><source srcset="img/author-23.webp" type="image/webp"><img src="img/author-23.jpg" alt="Авторский букет" /></picture>
+    <div class="item-product__loader"></div>
+    <img
+      data-src="img/author-23.jpg"
+      src="img/plug.png"
+      alt="Авторский букет"
+    />
   </div>
   <div class="item-product__title">Авторский букет <span>#23</span></div>
   <div class="item-product__price">3650 <span>₽</span></div>
@@ -1936,7 +2342,12 @@
   data-type="author"
 >
   <div class="item-product__image">
-    <picture><source srcset="img/author-24.webp" type="image/webp"><img src="img/author-24.jpg" alt="Авторский букет" /></picture>
+    <div class="item-product__loader"></div>
+    <img
+      data-src="img/author-24.jpg"
+      src="img/plug.png"
+      alt="Авторский букет"
+    />
   </div>
   <div class="item-product__title">Авторский букет <span>#24</span></div>
   <div class="item-product__price">3100 <span>₽</span></div>
@@ -1958,7 +2369,12 @@
   data-type="author"
 >
   <div class="item-product__image">
-    <picture><source srcset="img/author-25.webp" type="image/webp"><img src="img/author-25.jpg" alt="Авторский букет" /></picture>
+    <div class="item-product__loader"></div>
+    <img
+      data-src="img/author-25.jpg"
+      src="img/plug.png"
+      alt="Авторский букет"
+    />
   </div>
   <div class="item-product__title">Авторский букет <span>#25</span></div>
   <div class="item-product__price">2300 <span>₽</span></div>
@@ -1980,7 +2396,12 @@
   data-type="author"
 >
   <div class="item-product__image">
-    <picture><source srcset="img/author-26.webp" type="image/webp"><img src="img/author-26.jpg" alt="Авторский букет" /></picture>
+    <div class="item-product__loader"></div>
+    <img
+      data-src="img/author-26.jpg"
+      src="img/plug.png"
+      alt="Авторский букет"
+    />
   </div>
   <div class="item-product__title">Авторский букет <span>#26</span></div>
   <div class="item-product__price">7250 <span>₽</span></div>
@@ -2002,7 +2423,12 @@
   data-type="author"
 >
   <div class="item-product__image">
-    <picture><source srcset="img/author-27.webp" type="image/webp"><img src="img/author-27.jpg" alt="Авторский букет" /></picture>
+    <div class="item-product__loader"></div>
+    <img
+      data-src="img/author-27.jpg"
+      src="img/plug.png"
+      alt="Авторский букет"
+    />
   </div>
   <div class="item-product__title">Авторский букет <span>#27</span></div>
   <div class="item-product__price">3850 <span>₽</span></div>
@@ -2024,7 +2450,12 @@
   data-type="author"
 >
   <div class="item-product__image">
-    <picture><source srcset="img/author-28.webp" type="image/webp"><img src="img/author-28.jpg" alt="Авторский букет" /></picture>
+    <div class="item-product__loader"></div>
+    <img
+      data-src="img/author-28.jpg"
+      src="img/plug.png"
+      alt="Авторский букет"
+    />
   </div>
   <div class="item-product__title">Авторский букет <span>#28</span></div>
   <div class="item-product__price">3150 <span>₽</span></div>
@@ -2046,7 +2477,12 @@
   data-type="author"
 >
   <div class="item-product__image">
-    <picture><source srcset="img/author-29.webp" type="image/webp"><img src="img/author-29.jpg" alt="Авторский букет" /></picture>
+    <div class="item-product__loader"></div>
+    <img
+      data-src="img/author-29.jpg"
+      src="img/plug.png"
+      alt="Авторский букет"
+    />
   </div>
   <div class="item-product__title">Авторский букет <span>#29</span></div>
   <div class="item-product__price">5700 <span>₽</span></div>
@@ -2068,7 +2504,12 @@
   data-type="author"
 >
   <div class="item-product__image">
-    <picture><source srcset="img/author-30.webp" type="image/webp"><img src="img/author-30.jpg" alt="Авторский букет" /></picture>
+    <div class="item-product__loader"></div>
+    <img
+      data-src="img/author-30.jpg"
+      src="img/plug.png"
+      alt="Авторский букет"
+    />
   </div>
   <div class="item-product__title">Авторский букет <span>#30</span></div>
   <div class="item-product__price">5000 <span>₽</span></div>
@@ -2090,7 +2531,12 @@
   data-type="author"
 >
   <div class="item-product__image">
-    <picture><source srcset="img/author-31.webp" type="image/webp"><img src="img/author-31.jpg" alt="Авторский букет" /></picture>
+    <div class="item-product__loader"></div>
+    <img
+      data-src="img/author-31.jpg"
+      src="img/plug.png"
+      alt="Авторский букет"
+    />
   </div>
   <div class="item-product__title">Авторский букет <span>#31</span></div>
   <div class="item-product__price">3000 <span>₽</span></div>
@@ -2112,7 +2558,12 @@
   data-type="author"
 >
   <div class="item-product__image">
-    <picture><source srcset="img/author-32.webp" type="image/webp"><img src="img/author-32.jpg" alt="Авторский букет" /></picture>
+    <div class="item-product__loader"></div>
+    <img
+      data-src="img/author-32.jpg"
+      src="img/plug.png"
+      alt="Авторский букет"
+    />
   </div>
   <div class="item-product__title">Авторский букет <span>#32</span></div>
   <div class="item-product__price">3850 <span>₽</span></div>
@@ -2134,7 +2585,12 @@
   data-type="author"
 >
   <div class="item-product__image">
-    <picture><source srcset="img/author-33.webp" type="image/webp"><img src="img/author-33.jpg" alt="Авторский букет" /></picture>
+    <div class="item-product__loader"></div>
+    <img
+      data-src="img/author-33.jpg"
+      src="img/plug.png"
+      alt="Авторский букет"
+    />
   </div>
   <div class="item-product__title">Авторский букет <span>#33</span></div>
   <div class="item-product__price">4150 <span>₽</span></div>
@@ -2156,7 +2612,12 @@
   data-type="author"
 >
   <div class="item-product__image">
-    <picture><source srcset="img/author-34.webp" type="image/webp"><img src="img/author-34.jpg" alt="Авторский букет" /></picture>
+    <div class="item-product__loader"></div>
+    <img
+      data-src="img/author-34.jpg"
+      src="img/plug.png"
+      alt="Авторский букет"
+    />
   </div>
   <div class="item-product__title">Авторский букет <span>#34</span></div>
   <div class="item-product__price">3650 <span>₽</span></div>
@@ -2178,7 +2639,12 @@
   data-type="author"
 >
   <div class="item-product__image">
-    <picture><source srcset="img/author-35.webp" type="image/webp"><img src="img/author-35.jpg" alt="Авторский букет" /></picture>
+    <div class="item-product__loader"></div>
+    <img
+      data-src="img/author-35.jpg"
+      src="img/plug.png"
+      alt="Авторский букет"
+    />
   </div>
   <div class="item-product__title">Авторский букет <span>#35</span></div>
   <div class="item-product__price">2850 <span>₽</span></div>
@@ -2200,7 +2666,12 @@
   data-type="author"
 >
   <div class="item-product__image">
-    <picture><source srcset="img/author-36.webp" type="image/webp"><img src="img/author-36.jpg" alt="Авторский букет" /></picture>
+    <div class="item-product__loader"></div>
+    <img
+      data-src="img/author-36.jpg"
+      src="img/plug.png"
+      alt="Авторский букет"
+    />
   </div>
   <div class="item-product__title">Авторский букет <span>#36</span></div>
   <div class="item-product__price">5000 <span>₽</span></div>
@@ -2222,7 +2693,12 @@
   data-type="author"
 >
   <div class="item-product__image">
-    <picture><source srcset="img/author-37.webp" type="image/webp"><img src="img/author-37.jpg" alt="Авторский букет" /></picture>
+    <div class="item-product__loader"></div>
+    <img
+      data-src="img/author-37.jpg"
+      src="img/plug.png"
+      alt="Авторский букет"
+    />
   </div>
   <div class="item-product__title">Авторский букет <span>#37</span></div>
   <div class="item-product__price">7950 <span>₽</span></div>
@@ -2244,7 +2720,12 @@
   data-type="comp"
 >
   <div class="item-product__image">
-    <picture><source srcset="img/comp-1.webp" type="image/webp"><img src="img/comp-1.jpg" alt="Композиция" /></picture>
+    <div class="item-product__loader"></div>
+    <img
+      data-src="img/comp-1.jpg"
+      src="img/plug.png"
+      alt="Композиция"
+    />
   </div>
   <div class="item-product__title">Композиция <span>#1</span></div>
   <div class="item-product__price">15500 <span>₽</span></div>
@@ -2266,7 +2747,12 @@
   data-type="comp"
 >
   <div class="item-product__image">
-    <picture><source srcset="img/comp-2.webp" type="image/webp"><img src="img/comp-2.jpg" alt="Композиция" /></picture>
+    <div class="item-product__loader"></div>
+    <img
+      data-src="img/comp-2.jpg"
+      src="img/plug.png"
+      alt="Композиция"
+    />
   </div>
   <div class="item-product__title">Композиция <span>#2</span></div>
   <div class="item-product__price">3450 <span>₽</span></div>
@@ -2288,7 +2774,12 @@
   data-type="comp"
 >
   <div class="item-product__image">
-    <picture><source srcset="img/comp-3.webp" type="image/webp"><img src="img/comp-3.jpg" alt="Композиция" /></picture>
+    <div class="item-product__loader"></div>
+    <img
+      data-src="img/comp-3.jpg"
+      src="img/plug.png"
+      alt="Композиция"
+    />
   </div>
   <div class="item-product__title">Композиция <span>#3</span></div>
   <div class="item-product__price">6250 <span>₽</span></div>
@@ -2310,7 +2801,12 @@
   data-type="comp"
 >
   <div class="item-product__image">
-    <picture><source srcset="img/comp-4.webp" type="image/webp"><img src="img/comp-4.jpg" alt="Композиция" /></picture>
+    <div class="item-product__loader"></div>
+    <img
+      data-src="img/comp-4.jpg"
+      src="img/plug.png"
+      alt="Композиция"
+    />
   </div>
   <div class="item-product__title">Композиция <span>#4</span></div>
   <div class="item-product__price">8350 <span>₽</span></div>
@@ -2332,7 +2828,12 @@
   data-type="comp"
 >
   <div class="item-product__image">
-    <picture><source srcset="img/comp-5.webp" type="image/webp"><img src="img/comp-5.jpg" alt="Композиция" /></picture>
+    <div class="item-product__loader"></div>
+    <img
+      data-src="img/comp-5.jpg"
+      src="img/plug.png"
+      alt="Композиция"
+    />
   </div>
   <div class="item-product__title">Композиция <span>#5</span></div>
   <div class="item-product__price">18000 <span>₽</span></div>
@@ -2354,7 +2855,12 @@
   data-type="comp"
 >
   <div class="item-product__image">
-    <picture><source srcset="img/comp-6.webp" type="image/webp"><img src="img/comp-6.jpg" alt="Композиция" /></picture>
+    <div class="item-product__loader"></div>
+    <img
+      data-src="img/comp-6.jpg"
+      src="img/plug.png"
+      alt="Композиция"
+    />
   </div>
   <div class="item-product__title">Композиция <span>#6</span></div>
   <div class="item-product__price">6000 <span>₽</span></div>
@@ -2376,7 +2882,12 @@
   data-type="comp"
 >
   <div class="item-product__image">
-    <picture><source srcset="img/comp-7.webp" type="image/webp"><img src="img/comp-7.jpg" alt="Композиция" /></picture>
+    <div class="item-product__loader"></div>
+    <img
+      data-src="img/comp-7.jpg"
+      src="img/plug.png"
+      alt="Композиция"
+    />
   </div>
   <div class="item-product__title">Композиция <span>#7</span></div>
   <div class="item-product__price">11500 <span>₽</span></div>
@@ -2398,7 +2909,12 @@
   data-type="comp"
 >
   <div class="item-product__image">
-    <picture><source srcset="img/comp-8.webp" type="image/webp"><img src="img/comp-8.jpg" alt="Композиция" /></picture>
+    <div class="item-product__loader"></div>
+    <img
+      data-src="img/comp-8.jpg"
+      src="img/plug.png"
+      alt="Композиция"
+    />
   </div>
   <div class="item-product__title">Композиция <span>#8</span></div>
   <div class="item-product__price">5200 <span>₽</span></div>
@@ -2420,7 +2936,12 @@
   data-type="comp"
 >
   <div class="item-product__image">
-    <picture><source srcset="img/comp-9.webp" type="image/webp"><img src="img/comp-9.jpg" alt="Композиция" /></picture>
+    <div class="item-product__loader"></div>
+    <img
+      data-src="img/comp-9.jpg"
+      src="img/plug.png"
+      alt="Композиция"
+    />
   </div>
   <div class="item-product__title">Композиция <span>#9</span></div>
   <div class="item-product__price">8550 <span>₽</span></div>
@@ -2442,7 +2963,12 @@
   data-type="comp"
 >
   <div class="item-product__image">
-    <picture><source srcset="img/comp-10.webp" type="image/webp"><img src="img/comp-10.jpg" alt="Композиция" /></picture>
+    <div class="item-product__loader"></div>
+    <img
+      data-src="img/comp-10.jpg"
+      src="img/plug.png"
+      alt="Композиция"
+    />
   </div>
   <div class="item-product__title">Композиция <span>#10</span></div>
   <div class="item-product__price">3350 <span>₽</span></div>
@@ -2464,7 +2990,12 @@
   data-type="comp"
 >
   <div class="item-product__image">
-    <picture><source srcset="img/comp-11.webp" type="image/webp"><img src="img/comp-11.jpg" alt="Композиция" /></picture>
+    <div class="item-product__loader"></div>
+    <img
+      data-src="img/comp-11.jpg"
+      src="img/plug.png"
+      alt="Композиция"
+    />
   </div>
   <div class="item-product__title">Композиция <span>#11</span></div>
   <div class="item-product__price">3650 <span>₽</span></div>
@@ -2486,7 +3017,12 @@
   data-type="comp"
 >
   <div class="item-product__image">
-    <picture><source srcset="img/comp-12.webp" type="image/webp"><img src="img/comp-12.jpg" alt="Композиция" /></picture>
+    <div class="item-product__loader"></div>
+    <img
+      data-src="img/comp-12.jpg"
+      src="img/plug.png"
+      alt="Композиция"
+    />
   </div>
   <div class="item-product__title">Композиция <span>#12</span></div>
   <div class="item-product__price">11500 <span>₽</span></div>
@@ -2508,7 +3044,12 @@
   data-type="comp"
 >
   <div class="item-product__image">
-    <picture><source srcset="img/comp-13.webp" type="image/webp"><img src="img/comp-13.jpg" alt="Композиция" /></picture>
+    <div class="item-product__loader"></div>
+    <img
+      data-src="img/comp-13.jpg"
+      src="img/plug.png"
+      alt="Композиция"
+    />
   </div>
   <div class="item-product__title">Композиция <span>#13</span></div>
   <div class="item-product__price">3550 <span>₽</span></div>
@@ -2530,7 +3071,12 @@
   data-type="comp"
 >
   <div class="item-product__image">
-    <picture><source srcset="img/comp-14.webp" type="image/webp"><img src="img/comp-14.jpg" alt="Композиция" /></picture>
+    <div class="item-product__loader"></div>
+    <img
+      data-src="img/comp-14.jpg"
+      src="img/plug.png"
+      alt="Композиция"
+    />
   </div>
   <div class="item-product__title">Композиция <span>#14</span></div>
   <div class="item-product__price">5550 <span>₽</span></div>
@@ -2552,7 +3098,12 @@
   data-type="comp"
 >
   <div class="item-product__image">
-    <picture><source srcset="img/comp-15.webp" type="image/webp"><img src="img/comp-15.jpg" alt="Композиция" /></picture>
+    <div class="item-product__loader"></div>
+    <img
+      data-src="img/comp-15.jpg"
+      src="img/plug.png"
+      alt="Композиция"
+    />
   </div>
   <div class="item-product__title">Композиция <span>#15</span></div>
   <div class="item-product__price">8500 <span>₽</span></div>
@@ -2574,7 +3125,12 @@
   data-type="comp"
 >
   <div class="item-product__image">
-    <picture><source srcset="img/comp-16.webp" type="image/webp"><img src="img/comp-16.jpg" alt="Композиция" /></picture>
+    <div class="item-product__loader"></div>
+    <img
+      data-src="img/comp-16.jpg"
+      src="img/plug.png"
+      alt="Композиция"
+    />
   </div>
   <div class="item-product__title">Композиция <span>#16</span></div>
   <div class="item-product__price">4350 <span>₽</span></div>
@@ -2596,7 +3152,12 @@
   data-type="comp"
 >
   <div class="item-product__image">
-    <picture><source srcset="img/comp-17.webp" type="image/webp"><img src="img/comp-17.jpg" alt="Композиция" /></picture>
+    <div class="item-product__loader"></div>
+    <img
+      data-src="img/comp-17.jpg"
+      src="img/plug.png"
+      alt="Композиция"
+    />
   </div>
   <div class="item-product__title">Композиция <span>#17</span></div>
   <div class="item-product__price">3450 <span>₽</span></div>
@@ -2618,7 +3179,12 @@
   data-type="comp"
 >
   <div class="item-product__image">
-    <picture><source srcset="img/comp-18.webp" type="image/webp"><img src="img/comp-18.jpg" alt="Композиция" /></picture>
+    <div class="item-product__loader"></div>
+    <img
+      data-src="img/comp-18.jpg"
+      src="img/plug.png"
+      alt="Композиция"
+    />
   </div>
   <div class="item-product__title">Композиция <span>#18</span></div>
   <div class="item-product__price">21000 <span>₽</span></div>
@@ -2640,7 +3206,12 @@
   data-type="comp"
 >
   <div class="item-product__image">
-    <picture><source srcset="img/comp-19.webp" type="image/webp"><img src="img/comp-19.jpg" alt="Композиция" /></picture>
+    <div class="item-product__loader"></div>
+    <img
+      data-src="img/comp-19.jpg"
+      src="img/plug.png"
+      alt="Композиция"
+    />
   </div>
   <div class="item-product__title">Композиция <span>#19</span></div>
   <div class="item-product__price">4650 <span>₽</span></div>
@@ -2662,7 +3233,12 @@
   data-type="comp"
 >
   <div class="item-product__image">
-    <picture><source srcset="img/comp-20.webp" type="image/webp"><img src="img/comp-20.jpg" alt="Композиция" /></picture>
+    <div class="item-product__loader"></div>
+    <img
+      data-src="img/comp-20.jpg"
+      src="img/plug.png"
+      alt="Композиция"
+    />
   </div>
   <div class="item-product__title">Композиция <span>#20</span></div>
   <div class="item-product__price">7000 <span>₽</span></div>
@@ -2684,7 +3260,12 @@
   data-type="comp"
 >
   <div class="item-product__image">
-    <picture><source srcset="img/comp-21.webp" type="image/webp"><img src="img/comp-21.jpg" alt="Композиция" /></picture>
+    <div class="item-product__loader"></div>
+    <img
+      data-src="img/comp-21.jpg"
+      src="img/plug.png"
+      alt="Композиция"
+    />
   </div>
   <div class="item-product__title">Композиция <span>#21</span></div>
   <div class="item-product__price">3350 <span>₽</span></div>
@@ -2706,7 +3287,12 @@
   data-type="comp"
 >
   <div class="item-product__image">
-    <picture><source srcset="img/comp-22.webp" type="image/webp"><img src="img/comp-22.jpg" alt="Композиция" /></picture>
+    <div class="item-product__loader"></div>
+    <img
+      data-src="img/comp-22.jpg"
+      src="img/plug.png"
+      alt="Композиция"
+    />
   </div>
   <div class="item-product__title">Композиция <span>#22</span></div>
   <div class="item-product__price">22500 <span>₽</span></div>
@@ -2728,7 +3314,12 @@
   data-type="comp"
 >
   <div class="item-product__image">
-    <picture><source srcset="img/comp-23.webp" type="image/webp"><img src="img/comp-23.jpg" alt="Композиция" /></picture>
+    <div class="item-product__loader"></div>
+    <img
+      data-src="img/comp-23.jpg"
+      src="img/plug.png"
+      alt="Композиция"
+    />
   </div>
   <div class="item-product__title">Композиция <span>#23</span></div>
   <div class="item-product__price">7000 <span>₽</span></div>
@@ -2750,7 +3341,12 @@
   data-type="comp"
 >
   <div class="item-product__image">
-    <picture><source srcset="img/comp-24.webp" type="image/webp"><img src="img/comp-24.jpg" alt="Композиция" /></picture>
+    <div class="item-product__loader"></div>
+    <img
+      data-src="img/comp-24.jpg"
+      src="img/plug.png"
+      alt="Композиция"
+    />
   </div>
   <div class="item-product__title">Композиция <span>#24</span></div>
   <div class="item-product__price">4550 <span>₽</span></div>
@@ -2772,7 +3368,12 @@
   data-type="comp"
 >
   <div class="item-product__image">
-    <picture><source srcset="img/comp-25.webp" type="image/webp"><img src="img/comp-25.jpg" alt="Композиция" /></picture>
+    <div class="item-product__loader"></div>
+    <img
+      data-src="img/comp-25.jpg"
+      src="img/plug.png"
+      alt="Композиция"
+    />
   </div>
   <div class="item-product__title">Композиция <span>#25</span></div>
   <div class="item-product__price">9550 <span>₽</span></div>
@@ -2794,7 +3395,12 @@
   data-type="comp"
 >
   <div class="item-product__image">
-    <picture><source srcset="img/comp-26.webp" type="image/webp"><img src="img/comp-26.jpg" alt="Композиция" /></picture>
+    <div class="item-product__loader"></div>
+    <img
+      data-src="img/comp-26.jpg"
+      src="img/plug.png"
+      alt="Композиция"
+    />
   </div>
   <div class="item-product__title">Композиция <span>#26</span></div>
   <div class="item-product__price">7550 <span>₽</span></div>
@@ -2816,7 +3422,12 @@
   data-type="comp"
 >
   <div class="item-product__image">
-    <picture><source srcset="img/comp-27.webp" type="image/webp"><img src="img/comp-27.jpg" alt="Композиция" /></picture>
+    <div class="item-product__loader"></div>
+    <img
+      data-src="img/comp-27.jpg"
+      src="img/plug.png"
+      alt="Композиция"
+    />
   </div>
   <div class="item-product__title">Композиция <span>#27</span></div>
   <div class="item-product__price">7550 <span>₽</span></div>
@@ -2838,7 +3449,12 @@
   data-type="comp"
 >
   <div class="item-product__image">
-    <picture><source srcset="img/comp-28.webp" type="image/webp"><img src="img/comp-28.jpg" alt="Композиция" /></picture>
+    <div class="item-product__loader"></div>
+    <img
+      data-src="img/comp-28.jpg"
+      src="img/plug.png"
+      alt="Композиция"
+    />
   </div>
   <div class="item-product__title">Композиция <span>#28</span></div>
   <div class="item-product__price">3650 <span>₽</span></div>
@@ -2860,7 +3476,12 @@
   data-type="comp"
 >
   <div class="item-product__image">
-    <picture><source srcset="img/comp-29.webp" type="image/webp"><img src="img/comp-29.jpg" alt="Композиция" /></picture>
+    <div class="item-product__loader"></div>
+    <img
+      data-src="img/comp-29.jpg"
+      src="img/plug.png"
+      alt="Композиция"
+    />
   </div>
   <div class="item-product__title">Композиция <span>#29</span></div>
   <div class="item-product__price">3750 <span>₽</span></div>

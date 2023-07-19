@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -9,7 +9,7 @@
     />
     <link
       rel="apple-touch-icon"
-      sizes="76x76"
+      sizes="152x152"
       href="favicon/apple-touch-icon.png"
     />
     <link
@@ -28,21 +28,21 @@
     <link
       rel="mask-icon"
       href="favicon/safari-pinned-tab.svg"
-      color="#d69e9f"
+      color="#cd9a9b"
     />
-    <meta name="msapplication-TileColor" content="#d69e9f" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
     <meta name="theme-color" content="#ffffff" />
-    <link rel="stylesheet" href="css/icons.css?_v=20230719132957" />
-    <link rel="stylesheet" href="css/swiper-bundle.min.css?_v=20230719132957" />
-    <link rel="stylesheet" href="css/style.min.css?_v=20230719132957" />
-    <script src="js/components/swiper-bundle.min.js?_v=20230719132957" defer></script>
-    <script src="js/app.min.js?_v=20230719132957" defer></script>
-    <title>Цветочный дом krasota</title>
+    <link rel="stylesheet" href="css/icons.css?_v=20230720000622" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css?_v=20230720000622" />
+    <link rel="stylesheet" href="css/style.min.css?_v=20230720000622" />
+    <script src="js/components/swiper-bundle.min.js?_v=20230720000622" defer></script>
+    <script src="js/app.min.js?_v=20230720000622" defer></script>
+    <title>Цветочный дом Krasota</title>
   </head>
   <body class="main">
     <div class="loader active lock-padding">
   <div class="loader__body">
-    <div class="spinner"">
+    <div class="spinner">
       <span>k</span>
       <span>r</span>
       <span>a</span>
@@ -53,7 +53,12 @@
     </div>
   </div>
 </div>
-
+<script>
+	document.querySelector(".loader").addEventListener("wheel", (e) => {
+		e.preventDefault();
+    e.stopPropagation();
+	})
+</script>
     <div class="wrapper">
       <header class="header main top logo-hide lock-padding">
   <div class="container">
@@ -94,7 +99,7 @@
       <main class="content">
         <section class="welcome">
           <div class="container container-main">
-            <div class="welcome__content content-main">
+            <div class="welcome__content content-main anim-item bottom-to-top">
               <div class="content-main__icon">
                 <img src="img/icon-1.svg" alt="Иконка с цветком" />
               </div>
@@ -111,13 +116,16 @@
         </section>
         <section class="catalog">
           <div class="catalog__body">
-            <div class="link-main">
-              <a href="catalog.html" class="catalog__link link-main__link">
+            <div class="link-main catalog">
+              <a
+                href="catalog.html"
+                class="catalog__link link-main__link anim-item left-to-right"
+              >
                 <span>Каталог</span>
               </a>
             </div>
 
-            <div class="catalog__content content-main">
+            <div class="catalog__content content-main anim-item right-to-left">
               <div class="content-main__icon">
                 <img src="img/icon-2.svg" alt="Иконка с цветком" />
               </div>
@@ -131,7 +139,7 @@
         </section>
         <section class="interior">
           <div class="interior__body">
-            <div class="interior__content content-main">
+            <div class="interior__content content-main anim-item left-to-right">
               <div class="content-main__icon">
                 <img src="img/icon-3.svg" alt="Иконка с цветком" />
               </div>
@@ -141,10 +149,10 @@
                 станут украшением вашего дома, создавая уют и хорошее настроение
               </div>
             </div>
-            <div class="link-main">
+            <div class="link-main interior">
               <a
                 href="#"
-                class="interior__link popup__link link-main__link green"
+                class="interior__link popup__link link-main__link anim-item right-to-left green"
               >
                 <span>Интерьер</span>
               </a>
@@ -156,12 +164,14 @@
             <div class="link-main left">
               <a
                 href="delivery.html"
-                class="delivery__link link-main__link green"
+                class="delivery__link link-main__link green anim-item left-to-right"
               >
                 <span>Доставка</span>
               </a>
             </div>
-            <div class="delivery__content content-main delivery">
+            <div
+              class="delivery__content content-main delivery anim-item bottom-to-top"
+            >
               <div class="content-main__icon">
                 <img src="img/icon-4.svg" alt="Иконка с цветком" />
               </div>
@@ -172,7 +182,10 @@
               </div>
             </div>
             <div class="link-main right">
-              <a href="contacts.html" class="delivery__link link-main__link">
+              <a
+                href="contacts.html"
+                class="delivery__link link-main__link anim-item right-to-left"
+              >
                 <span>Контакты</span>
               </a>
             </div>

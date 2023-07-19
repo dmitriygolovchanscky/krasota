@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -9,7 +9,7 @@
   />
   <link
     rel="apple-touch-icon"
-    sizes="76x76"
+    sizes="152x152"
     href="favicon/apple-touch-icon.png"
   />
   <link
@@ -25,12 +25,12 @@
     href="favicon/favicon-16x16.png"
   />
   <link rel="manifest" href="favicon/site.webmanifest" />
-  <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#d69e9f" />
-  <meta name="msapplication-TileColor" content="#d69e9f" />
+  <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#cd9a9b" />
+  <meta name="msapplication-TileColor" content="#ffffff" />
   <meta name="theme-color" content="#ffffff" />
-  <link rel="stylesheet" href="css/icons.css?_v=20230719132957" />
-  <link rel="stylesheet" href="css/style.min.css?_v=20230719132957" />
-  <script src="js/app.min.js?_v=20230719132957" defer></script>
+  <link rel="stylesheet" href="css/icons.css?_v=20230720000622" />
+  <link rel="stylesheet" href="css/style.min.css?_v=20230720000622" />
+  <script src="js/app.min.js?_v=20230720000622" defer></script>
   <title>Контакты</title>
 </head>
 
@@ -38,7 +38,7 @@
   <body>
     <div class="loader active lock-padding">
   <div class="loader__body">
-    <div class="spinner"">
+    <div class="spinner">
       <span>k</span>
       <span>r</span>
       <span>a</span>
@@ -49,7 +49,12 @@
     </div>
   </div>
 </div>
-
+<script>
+	document.querySelector(".loader").addEventListener("wheel", (e) => {
+		e.preventDefault();
+    e.stopPropagation();
+	})
+</script>
     <div class="wrapper">
       <header class="header lock-padding contacts">
 	<div class="container">

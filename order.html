@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -9,7 +9,7 @@
   />
   <link
     rel="apple-touch-icon"
-    sizes="76x76"
+    sizes="152x152"
     href="favicon/apple-touch-icon.png"
   />
   <link
@@ -25,20 +25,20 @@
     href="favicon/favicon-16x16.png"
   />
   <link rel="manifest" href="favicon/site.webmanifest" />
-  <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#d69e9f" />
-  <meta name="msapplication-TileColor" content="#d69e9f" />
+  <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#cd9a9b" />
+  <meta name="msapplication-TileColor" content="#ffffff" />
   <meta name="theme-color" content="#ffffff" />
-  <link rel="stylesheet" href="css/icons.css?_v=20230719132957" />
-  <link rel="stylesheet" href="css/style.min.css?_v=20230719132957" />
-  <script src="js/app.min.js?_v=20230719132957" defer></script>
+  <link rel="stylesheet" href="css/icons.css?_v=20230720000622" />
+  <link rel="stylesheet" href="css/style.min.css?_v=20230720000622" />
+  <script src="js/app.min.js?_v=20230720000622" defer></script>
   <title>Оформление заказа</title>
 </head>
 
 
   <body>
-	<div class="loader active lock-padding">
+    <div class="loader active lock-padding">
   <div class="loader__body">
-    <div class="spinner"">
+    <div class="spinner">
       <span>k</span>
       <span>r</span>
       <span>a</span>
@@ -49,7 +49,12 @@
     </div>
   </div>
 </div>
-
+<script>
+	document.querySelector(".loader").addEventListener("wheel", (e) => {
+		e.preventDefault();
+    e.stopPropagation();
+	})
+</script>
     <div class="wrapper">
       <header class="header lock-padding ">
 	<div class="container">
@@ -93,11 +98,11 @@
                     id="your-name"
                     autocomplete="off"
                     spellcheck="false"
-						  maxlength="16"
+                    maxlength="16"
                   />
-						<div class="order__error error-name">Вы не ввели имя</div>
+                  <div class="order__error error-name">Вы не ввели имя</div>
                 </div>
-                <div class="order__item ">
+                <div class="order__item">
                   <div class="order__name">Ваш телефон</div>
                   <input
                     class="order__input input-phone"
@@ -107,7 +112,7 @@
                     autocomplete="off"
                     spellcheck="false"
                   />
-						<div class="order__error error-phone">Некорректный номер</div>
+                  <div class="order__error error-phone">Некорректный номер</div>
                 </div>
                 <div class="order__item order__checkbox">
                   <div class="order__name">Способ получения</div>
@@ -163,9 +168,11 @@
                     id="other-name"
                     autocomplete="off"
                     spellcheck="false"
-						  maxlength="16"
+                    maxlength="16"
                   />
-						<div class="order__error error-name-other">Вы не ввели имя</div>
+                  <div class="order__error error-name-other">
+                    Вы не ввели имя
+                  </div>
                 </div>
                 <div class="order__item hide">
                   <div class="order__name">Телефон получателя</div>
@@ -177,7 +184,9 @@
                     autocomplete="off"
                     spellcheck="false"
                   />
-						<div class="order__error error-phone-other">Некорректный номер</div>
+                  <div class="order__error error-phone-other">
+                    Некорректный номер
+                  </div>
                 </div>
                 <div class="order__item hide">
                   <div class="order__name address-title">Ваш адрес</div>
@@ -188,9 +197,11 @@
                     id="address"
                     autocomplete="off"
                     spellcheck="false"
-						  maxlength="200"
+                    maxlength="200"
                   />
-						<div class="order__error error-address">Вы не ввели адрес</div>
+                  <div class="order__error error-address">
+                    Вы не ввели адрес
+                  </div>
                 </div>
                 <div class="order__item order__checkbox hide">
                   <div class="order__name">Дата и время</div>
@@ -225,7 +236,9 @@
                     autocomplete="off"
                     spellcheck="false"
                   />
-						<div class="order__error error-date">Некорректный ввод даты</div>
+                  <div class="order__error error-date">
+                    Некорректный ввод даты
+                  </div>
                 </div>
                 <div class="order__item hide">
                   <div class="order__name">Введите время</div>
@@ -236,9 +249,11 @@
                     id="timeInput"
                     autocomplete="off"
                     spellcheck="false"
-						  maxlength="5"
+                    maxlength="5"
                   />
-						<div class="order__error error-time">Некорректный ввод времени</div>
+                  <div class="order__error error-time">
+                    Некорректный ввод времени
+                  </div>
                 </div>
                 <div class="order__item order__checkbox hide">
                   <div class="order__name">
@@ -264,7 +279,11 @@
                 </div>
                 <div class="order__item">
                   <div class="order__name">Комментарий к заказу</div>
-                  <textarea name="message" id="message" maxlength="500"></textarea>
+                  <textarea
+                    name="message"
+                    id="message"
+                    maxlength="500"
+                  ></textarea>
                 </div>
                 <div class="order__bottom">
                   <div class="order__sum">
@@ -323,14 +342,14 @@
             </div>
           </div>
         </section>
-        <div class=" order-message order__empty">
+        <div class="order-message order__empty">
           <div class="message-order__text">Корзина пустая</div>
           <a href="catalog.html" class="message-order__link">В каталог</a>
         </div>
-		  <div class=" order-message order__success">
-			<div class="message-order__text ">Заказ успешно оформлен!</div>
-			<a href="index.html" class="message-order__link">На главную</a>
-		  </div>
+        <div class="order-message order__success">
+          <div class="message-order__text">Заказ успешно оформлен!</div>
+          <a href="index.html" class="message-order__link">На главную</a>
+        </div>
       </main>
       <footer class="footer">
   <div class="container">
