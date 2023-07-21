@@ -2662,6 +2662,10 @@ section.main {
   .order textarea {
     max-width: none;
   }
+
+  .label-date {
+    width: 100%;
+  }
 }
 
 @media (max-width: 992px) {
