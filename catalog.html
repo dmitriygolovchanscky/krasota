@@ -28,9 +28,9 @@
   <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#cd9a9b" />
   <meta name="msapplication-TileColor" content="#ffffff" />
   <meta name="theme-color" content="#ffffff" />
-  <link rel="stylesheet" href="css/icons.css?_v=20230720000622" />
-  <link rel="stylesheet" href="css/style.min.css?_v=20230720000622" />
-  <script src="js/app.min.js?_v=20230720000622" defer></script>
+  <link rel="stylesheet" href="css/icons.css?_v=20230721140205" />
+  <link rel="stylesheet" href="css/style.min.css?_v=20230721140205" />
+  <script src="js/app.min.js?_v=20230721140205" defer></script>
   <title>Каталог</title>
 </head>
 
@@ -50,11 +50,16 @@
   </div>
 </div>
 <script>
-	document.querySelector(".loader").addEventListener("wheel", (e) => {
-		e.preventDefault();
+  document.querySelector(".loader").addEventListener("wheel", (e) => {
+    e.preventDefault();
     e.stopPropagation();
-	})
+  });
+  document.querySelector(".loader").addEventListener("touchmove", (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+  });
 </script>
+
     <div class="wrapper">
       <header class="header lock-padding catalog">
 	<div class="container">
