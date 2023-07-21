@@ -2193,12 +2193,13 @@ section.main {
 .cart-order__items {
   position: relative;
   margin-top: 15px;
+  padding-bottom: 20px;
 }
 
 .cart-order__items::after {
   content: "";
   position: absolute;
-  bottom: -20px;
+  bottom: 0;
   left: 0;
   width: 100%;
   height: 1px;
@@ -2332,7 +2333,7 @@ section.main {
 }
 
 .cart-order__delivery {
-  margin-top: 35px;
+  margin-top: 15px;
 }
 
 .cart-order__sum {
@@ -2349,8 +2350,12 @@ section.main {
 }
 
 .delivery-cart {
-  display: flex;
+  display: none;
   justify-content: space-between;
+}
+
+.delivery-cart.active {
+  display: flex;
 }
 
 .delivery-cart__title {
