@@ -2410,8 +2410,12 @@ section.main {
   width: 100%;
   padding: 10px 15px;
   border-radius: 20px;
+}
+
+.input-date:disabled {
   background-color: #fff;
   color: #333;
+  border: 1px solid #333;
 }
 
 .input-date__button {
