@@ -28,9 +28,9 @@
   <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#cd9a9b" />
   <meta name="msapplication-TileColor" content="#ffffff" />
   <meta name="theme-color" content="#ffffff" />
-  <link rel="stylesheet" href="css/icons.css?_v=20230720000622" />
-  <link rel="stylesheet" href="css/style.min.css?_v=20230720000622" />
-  <script src="js/app.min.js?_v=20230720000622" defer></script>
+  <link rel="stylesheet" href="css/icons.css?_v=20230721093954" />
+  <link rel="stylesheet" href="css/style.min.css?_v=20230721093954" />
+  <script src="js/app.min.js?_v=20230721093954" defer></script>
   <title>Оформление заказа</title>
 </head>
 
@@ -227,15 +227,94 @@
                   >
                 </div>
                 <div class="order__item hide">
-                  <div class="order__name">Введите дату</div>
-                  <input
-                    class="order__input input-date"
-                    type="tel"
-                    name="date"
-                    id="date"
-                    autocomplete="off"
-                    spellcheck="false"
-                  />
+                  <div class="order__name">Выберите дату</div>
+                  <label class="label-date">
+                    <input
+                      class="order__input input-date"
+                      type="text"
+                      name="date"
+                      id="date"
+                      disabled
+                      autocomplete="off"
+                      spellcheck="false"
+                    />
+                    <div class="input-date__button"></div>
+                    <div class="input-date__calendar calendar">
+                      <div class="calendar__header">
+                        <div class="calendar__prev"><i class="fa-solid fa-angle-left"></i></div>
+                        <div class="calendar__year"></div>
+                        <div class="calendar__next"><i class="fa-solid fa-angle-right"></i></div>
+                      </div>
+                      <div class="calendar__month"></div>
+                      <div class="calendar__titles">
+                        <div class="calendar__title">Пн</div>
+                        <div class="calendar__title">Вт</div>
+                        <div class="calendar__title">Ср</div>
+                        <div class="calendar__title">Чт</div>
+                        <div class="calendar__title">Пт</div>
+                        <div class="calendar__title">Сб</div>
+                        <div class="calendar__title">Вс</div>
+                      </div>
+                      <div class="calendar__days">
+                        <div class="calendar__day"></div>
+                        <div class="calendar__day"></div>
+                        <div class="calendar__day"></div>
+                        <div class="calendar__day"></div>
+                        <div class="calendar__day"></div>
+                        <div class="calendar__day"></div>
+                        <div class="calendar__day"></div>
+                        <div class="calendar__day"></div>
+                        <div class="calendar__day"></div>
+                        <div class="calendar__day"></div>
+                        <div class="calendar__day"></div>
+                        <div class="calendar__day"></div>
+                        <div class="calendar__day"></div>
+                        <div class="calendar__day"></div>
+                        <div class="calendar__day"></div>
+                        <div class="calendar__day"></div>
+                        <div class="calendar__day"></div>
+                        <div class="calendar__day"></div>
+                        <div class="calendar__day"></div>
+                        <div class="calendar__day"></div>
+                        <div class="calendar__day"></div>
+                        <div class="calendar__day"></div>
+                        <div class="calendar__day"></div>
+                        <div class="calendar__day"></div>
+                        <div class="calendar__day"></div>
+                        <div class="calendar__day"></div>
+                        <div class="calendar__day"></div>
+                        <div class="calendar__day"></div>
+                        <div class="calendar__day"></div>
+                        <div class="calendar__day"></div>
+                        <div class="calendar__day"></div>
+                        <div class="calendar__day"></div>
+                        <div class="calendar__day"></div>
+                        <div class="calendar__day"></div>
+                        <div class="calendar__day"></div>
+                        <div class="calendar__day"></div>
+                        <div class="calendar__day"></div>
+                        <div class="calendar__day"></div>
+                        <div class="calendar__day"></div>
+                        <div class="calendar__day"></div>
+                        <div class="calendar__day"></div>
+                        <div class="calendar__day"></div>
+                      </div>
+                      <div class="calendar__months">
+                        <div class="calendar__months-item">Январь</div>
+                        <div class="calendar__months-item">Февраль</div>
+                        <div class="calendar__months-item">Март</div>
+                        <div class="calendar__months-item">Апрель</div>
+                        <div class="calendar__months-item">Май</div>
+                        <div class="calendar__months-item">Июнь</div>
+                        <div class="calendar__months-item">Июль</div>
+                        <div class="calendar__months-item">Август</div>
+                        <div class="calendar__months-item">Сентябрь</div>
+                        <div class="calendar__months-item">Октябрь</div>
+                        <div class="calendar__months-item">Ноябрь</div>
+                        <div class="calendar__months-item">Декабрь</div>
+                      </div>
+                    </div>
+                  </label>
                   <div class="order__error error-date">
                     Некорректный ввод даты
                   </div>
