@@ -2413,12 +2413,6 @@ section.main {
   margin-top: 0;
 }
 
-.input-date:disabled {
-  background-color: #fff;
-  color: #333;
-  border: 1px solid #333;
-}
-
 .input-date__button {
   position: absolute;
   top: 0;
