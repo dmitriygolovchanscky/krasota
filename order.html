@@ -28,9 +28,9 @@
   <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#cd9a9b" />
   <meta name="msapplication-TileColor" content="#ffffff" />
   <meta name="theme-color" content="#ffffff" />
-  <link rel="stylesheet" href="css/icons.css?_v=20230721140205" />
-  <link rel="stylesheet" href="css/style.min.css?_v=20230721140205" />
-  <script src="js/app.min.js?_v=20230721140205" defer></script>
+  <link rel="stylesheet" href="css/icons.css?_v=20230721190448" />
+  <link rel="stylesheet" href="css/style.min.css?_v=20230721190448" />
+  <script src="js/app.min.js?_v=20230721190448" defer></script>
   <title>Оформление заказа</title>
 </head>
 
@@ -241,13 +241,18 @@
                       id="date"
                       autocomplete="off"
                       spellcheck="false"
+                      tabindex="-1"
                     />
                     <div class="input-date__button"></div>
                     <div class="input-date__calendar calendar">
                       <div class="calendar__header">
-                        <div class="calendar__prev"><i class="fa-solid fa-angle-left"></i></div>
+                        <div class="calendar__prev">
+                          <i class="fa-solid fa-angle-left"></i>
+                        </div>
                         <div class="calendar__year"></div>
-                        <div class="calendar__next"><i class="fa-solid fa-angle-right"></i></div>
+                        <div class="calendar__next">
+                          <i class="fa-solid fa-angle-right"></i>
+                        </div>
                       </div>
                       <div class="calendar__month"></div>
                       <div class="calendar__titles">
@@ -324,16 +329,33 @@
                   </div>
                 </div>
                 <div class="order__item hide">
-                  <div class="order__name">Введите время</div>
-                  <input
-                    class="order__input input-time"
-                    type="tel"
-                    name="timeInput"
-                    id="timeInput"
-                    autocomplete="off"
-                    spellcheck="false"
-                    maxlength="5"
-                  />
+                  <div class="order__name">Выберите время</div>
+                  <div class="time__container">
+                    <input
+                      class="order__input input-time"
+                      type="text"
+                      name="timeInput"
+                      id="timeInput"
+                      autocomplete="off"
+                      spellcheck="false"
+                      tabindex="-1"
+                    />
+                    <div class="time__button"></div>
+                    <div class="time__items">
+                      <div class="time__item" data-time="9">9:00 - 10:00</div>
+                      <div class="time__item" data-time="10">10:00 - 11:00</div>
+                      <div class="time__item" data-time="11">11:00 - 12:00</div>
+                      <div class="time__item" data-time="12">12:00 - 13:00</div>
+                      <div class="time__item" data-time="13">13:00 - 14:00</div>
+                      <div class="time__item" data-time="14">14:00 - 15:00</div>
+                      <div class="time__item" data-time="15">15:00 - 16:00</div>
+                      <div class="time__item" data-time="16">16:00 - 17:00</div>
+                      <div class="time__item" data-time="17">17:00 - 18:00</div>
+                      <div class="time__item" data-time="18">18:00 - 19:00</div>
+                      <div class="time__item" data-time="19">19:00 - 20:00</div>
+                      <div class="time__item" data-time="20">20:00 - 21:00</div>
+                    </div>
+                  </div>
                   <div class="order__error error-time">
                     Некорректный ввод времени
                   </div>

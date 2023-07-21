@@ -2563,6 +2563,69 @@ section.main {
   color: #fff;
 }
 
+.time__container {
+  position: relative;
+  margin-top: 5px;
+  width: 300px;
+  height: 35px;
+}
+
+.input-time {
+  margin-top: 0;
+}
+
+.time__button {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.time__items {
+  position: absolute;
+  bottom: 42px;
+  left: 0;
+  border-radius: 20px;
+  padding: 15px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(119, 119, 119, 0.3803921569);
+  visibility: hidden;
+  transform: scale(0);
+  transform-origin: bottom center;
+  color: #333;
+  display: flex;
+  flex-wrap: wrap;
+  opacity: 0;
+  transition: all 0.3s ease 0s;
+  gap: 4px;
+}
+
+.time__items.active {
+  opacity: 1;
+  transform: scale(1);
+  visibility: visible;
+}
+
+.time__item {
+  width: calc((100% - 4px) / 2);
+  font-family: Lato;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  padding: 5px;
+  border-radius: 10px;
+  border: 1px solid #dfdfdf;
+}
+
+.time__item:hover {
+  background-color: #dfdfdf;
+  cursor: pointer;
+}
+
 @media (max-height: 560px) and (min-width: 769px) {
   .cart__body {
     height: 320px;
@@ -2664,6 +2727,10 @@ section.main {
   }
 
   .label-date {
+    width: 100%;
+  }
+
+  .time__container {
     width: 100%;
   }
 }
@@ -2810,6 +2877,10 @@ section.main {
   }
 
   .calendar {
+    width: 300px;
+  }
+
+  .time__items {
     width: 300px;
   }
 }
@@ -3426,6 +3497,10 @@ section.main {
   }
 
   .calendar {
+    width: 100%;
+  }
+
+  .time__items {
     width: 100%;
   }
 }
