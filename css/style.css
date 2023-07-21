@@ -2077,6 +2077,7 @@ section.main {
 }
 
 .order__input {
+  color: #333;
   margin-top: 5px;
   border-radius: 20px;
   border: solid 1px #777;
